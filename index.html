@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VTC Vizsgagyakorló V2</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --bg-2: #050816;
+      --card: #0a0f1f;
+      --card-2: #10182b;
+      --card-3: #172036;
+      --text: #f3f4f6;
+      --muted: #94a3b8;
+      --border: #243045;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --secondary: #111827;
+      --good: #22c55e;
+      --good-bg: #052e16;
+      --bad: #ef4444;
+      --bad-bg: #3f0d12;
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body,
+    #app {
+      min-height: 100%;
+      background: #000000;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.45;
+      background: radial-gradient(circle at top, #0b1220 0%, #050816 32%, #000000 100%);
+    }
+
+    .page {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 28px 24px 40px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .topbar h1 {
+      margin: 0 0 6px;
+      font-size: 32px;
+      color: #ffffff;
+      letter-spacing: 0.2px;
+    }
+
+    .topbar p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .topbar-actions,
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .primary-btn {
+      background: var(--primary);
+      color: white;
+      border: 1px solid transparent;
+    }
+
+    .primary-btn:hover:not(:disabled) {
+      background: var(--primary-hover);
+    }
+
+    .secondary-btn {
+      background: var(--secondary);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .secondary-btn:hover:not(:disabled) {
+      background: #1a2438;
+    }
+
+    .welcome-card,
+    .info-box,
+    .module-section,
+    .summary-card,
+    .question-card,
+    .result-card,
+    .live-stat-card,
+    .module-mini-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .welcome-card {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 32px 28px;
+      text-align: center;
+    }
+
+    .welcome-card h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .welcome-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .rules-list {
+      text-align: left;
+      margin: 20px auto 24px;
+      max-width: 520px;
+      color: var(--text);
+    }
+
+    .rules-list div {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .rules-list div:last-child {
+      border-bottom: 0;
+    }
+
+    .info-box {
+      padding: 16px 18px;
+      margin-bottom: 22px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .module-section {
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+
+    .module-header {
+      margin-bottom: 16px;
+    }
+
+    .module-header h2 {
+      margin: 0 0 4px;
+      color: #ffffff;
+    }
+
+    .module-header p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .question-grid,
+    .result-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .question-card,
+    .result-card {
+      padding: 22px;
+    }
+
+    .question-card.single-question {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 10px;
+      padding: 24px;
+    }
+
+    .question-meta,
+    .result-card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .module-badge,
+    .question-number,
+    .result-status,
+    .flag {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .module-badge {
+      background: #1d4ed8;
+      color: white;
+    }
+
+    .question-number {
+      background: #1e293b;
+      color: #e5e7eb;
+    }
+
+    .question-title,
+    .result-question-original {
+      margin: 0 0 14px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.35;
+    }
+
+    .translation-toggle {
+      margin: 12px 0 18px;
+    }
+
+    .translation-toggle summary {
+      cursor: pointer;
+      color: #93c5fd;
+      font-weight: 600;
+    }
+
+    .translation-box,
+    .result-question-hu,
+    .result-answer-hu {
+      margin-top: 8px;
+      padding: 10px 12px;
+      background: #0b1220;
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      color: #dbe4f0;
+    }
+
+    .answers-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .answer-option {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      cursor: pointer;
+      background: var(--card-2);
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .answer-option:hover {
+      background: var(--card-3);
+      border-color: #3b82f6;
+      transform: translateY(-1px);
+    }
+
+    .answer-option input {
+      margin-top: 3px;
+    }
+
+    .progress-wrap {
+      margin-bottom: 18px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 12px;
+      background: #111827;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #2563eb, #60a5fa);
+      transition: width 0.2s ease;
+    }
+
+    .live-stats {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .live-stats-main {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .live-stat-card {
+      padding: 18px 20px;
+      background: linear-gradient(180deg, #10182b 0%, #0a0f1f 100%);
+    }
+
+    .live-stat-label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .live-stat-value {
+      font-size: 34px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .live-stats-modules {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .module-mini-card {
+      padding: 16px;
+      background: linear-gradient(180deg, #10182b 0%, #0a0f1f 100%);
+      min-width: 0;
+    }
+
+    .module-mini-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+
+    .module-mini-value {
+      font-size: 24px;
+      font-weight: 800;
+      color: #93c5fd;
+      margin-bottom: 4px;
+    }
+
+    .module-mini-pass {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .summary-card {
+      padding: 18px;
+    }
+
+    .summary-card.pass {
+      border-color: #166534;
+      background: var(--good-bg);
+    }
+
+    .summary-card.fail {
+      border-color: #7f1d1d;
+      background: var(--bad-bg);
+    }
+
+    .result-card.ok {
+      border-color: #166534;
+    }
+
+    .result-card.bad {
+      border-color: #7f1d1d;
+    }
+
+    .result-status.ok,
+    .flag.correct {
+      background: var(--good-bg);
+      color: #86efac;
+    }
+
+    .result-status.bad {
+      background: var(--bad-bg);
+      color: #fca5a5;
+    }
+
+    .flag.chosen {
+      background: #1e3a8a;
+      color: #bfdbfe;
+    }
+
+    .result-answers {
+      margin: 14px 0 0;
+      padding-left: 20px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .result-answer {
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #0f172a;
+    }
+
+    .result-answer.correct {
+      border-color: #166534;
+      background: #0f2c1c;
+    }
+
+    .result-answer.wrong {
+      border-color: #7f1d1d;
+      background: #341212;
+    }
+
+    .result-flags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .final-status.pass {
+      color: #86efac;
+      font-weight: 700;
+    }
+
+    .final-status.fail {
+      color: #fca5a5;
+      font-weight: 700;
+    }
+
+    @media (max-width: 980px) {
+      .live-stats-modules {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .topbar {
+        flex-direction: column;
+      }
+
+      .page {
+        padding: 16px;
+      }
+
+      .question-card.single-question {
+        padding: 18px;
+      }
+
+      .question-title {
+        font-size: 21px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .live-stats-modules {
+        grid-template-columns: 1fr;
+      }
+
+      .live-stat-value {
+        font-size: 28px;
+      }
+
+      .module-mini-value {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script type="module">
+    import { RULES } from './questions.js';
+
+    const app = document.getElementById('app');
+
+    app.innerHTML = `
+      <div class="page">
+        <section class="welcome-card">
+          <h1>VTC Vizsgagyakorló V2</h1>
+          <p>60 kérdéses gyakorlóteszt, modulonkénti minimum ponthatárral.</p>
+
+          <div class="rules-list">
+            <div><strong>Módulo I:</strong> ${RULES.I.take} kérdés, minimum ${RULES.I.pass} helyes</div>
+            <div><strong>Módulo II:</strong> ${RULES.II.take} kérdés, minimum ${RULES.II.pass} helyes</div>
+            <div><strong>Módulo III:</strong> ${RULES.III.take} kérdés, minimum ${RULES.III.pass} helyes</div>
+            <div><strong>Módulo IV:</strong> ${RULES.IV.take} kérdés, minimum ${RULES.IV.pass} helyes</div>
+          </div>
+
+          <button id="start-exam-btn" class="primary-btn">Vizsga indítása</button>
+        </section>
+      </div>
+    `;
+
+    document.getElementById('start-exam-btn')?.addEventListener('click', async () => {
+      localStorage.removeItem('vtc_exam_state');
+      await import('./app.js');
+    });
+  </script>
+</body>
+</html>
