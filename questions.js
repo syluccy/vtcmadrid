@@ -6023,5 +6023,1201 @@ export const questionBank = [
       }
     ],
     "correctIndex": 1
-  }
+  },
+  {
+    "id": "seed-241",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Cuál de las siguientes definiciones corresponde a la palabra “caja”?",
+    "hu": "A következő meghatározások közül melyik felel meg a „caja” szónak?",
+    "answers": [
+      {
+        "original": "Musgo que se cría en la corteza de algunos árboles.",
+        "hu": "Moha, amely egyes fák kérgén nő."
+      },
+      {
+        "original": "Edificio para habitar.",
+        "hu": "Lakás céljára szolgáló épület."
+      },
+      {
+        "original": "Recipiente de diferentes materiales, tamaños y formas, generalmente con tapa, que sirve para guardar o transportar cosas.",
+        "hu": "Különböző anyagokból, méretekből és formákból álló, általában fedéllel rendelkező edény, amely arra szolgál, hogy dolgokat tároljon vagy szállítson."
+      },
+      {
+        "original": "Pieza de mobiliario que permite que los seres humanos se acuesten en ella.",
+        "hu": "Bútor darab, amely lehetővé teszi, hogy az emberek rajta lefeküdjenek."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-242",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Cuál de las siguientes definiciones corresponde a la palabra “cocina”?",
+    "hu": "A következő meghatározások közül melyik felel meg a \"cocina\" szónak?",
+    "answers": [
+      {
+        "original": "Acción de comer a una hora determinada del día.",
+        "hu": "Az evés cselekedete a nap egy meghatározott időpontjában."
+      },
+      {
+        "original": "Habitación de una casa u otro edificio que dispone de instalaciones adecuadas para cocinar.",
+        "hu": "Egy ház vagy más épület helyisége, amely megfelelő berendezésekkel rendelkezik a főzéshez."
+      },
+      {
+        "original": "Comida que se toma a última hora del día, al atardecer o por la noche.",
+        "hu": "Étel, amelyet a nap utolsó óráiban, alkonyatkor vagy este fogyasztanak."
+      },
+      {
+        "original": "Reunión de personas para merendar.",
+        "hu": "Személyek összejövetele uzsonnázásra."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-243",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué significa el refrán “El que mucho abarca, poco aprieta”?",
+    "hu": "Mit jelent a „El que mucho abarca, poco aprieta” közmondás?",
+    "answers": [
+      {
+        "original": "Que es bueno hacer mucho deporte.",
+        "hu": "Hogy sokat sportolni jó."
+      },
+      {
+        "original": "Que hay que tener cuidado para que no se te olviden las cosas.",
+        "hu": "Hogy óvatosnak kell lenni, nehogy elfelejtsd a dolgokat."
+      },
+      {
+        "original": "Que es mejor concentrarse en pocas cosas para lograr mejores resultados.",
+        "hu": "Hogy jobb kevés dologra koncentrálni a jobb eredmények elérése érdekében."
+      },
+      {
+        "original": "Que hay que intentar hacer muchas cosas a la vez para lograr buenos resultados.",
+        "hu": "Hogy meg kell próbálni egyszerre sok dolgot csinálni, hogy jó eredményeket érjünk el."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-244",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué significa el refrán “Más vale pájaro en mano que ciento volando”?",
+    "hu": "Mit jelent a 'Jobb egy madár a kézben, mint száz a levegőben' közmondás?",
+    "answers": [
+      {
+        "original": "Que hay que respetar a los pájaros y dejarlos en libertad.",
+        "hu": "Hogy tiszteletben kell tartani a madarakat és szabadon kell őket engedni."
+      },
+      {
+        "original": "Que hay que ver el futuro con esperanza.",
+        "hu": "Hogy a jövőt reménnyel kell nézni."
+      },
+      {
+        "original": "Que es mejor algo seguro, aunque sea poco, que la incierta probabilidad de grandes beneficios.",
+        "hu": "Hogy jobb valami biztos, még ha kevés is, mint a nagy haszon bizonytalan esélye."
+      },
+      {
+        "original": "Que hay que perseguir tus sueños, aunque sea muy difícil.",
+        "hu": "Hogy követni kell az álmaidat, még ha nagyon nehéz is."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-245",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué pareja de palabras no significan lo mismo?",
+    "hu": "Melyik szópár nem ugyanazt jelenti?",
+    "answers": [
+      {
+        "original": "Antiguo- Nuevo.",
+        "hu": "Régi- Új."
+      },
+      {
+        "original": "Olor- Aroma.",
+        "hu": "Szag- Illat."
+      },
+      {
+        "original": "Cabello- Pelo.",
+        "hu": "Haj- Haj."
+      },
+      {
+        "original": "Escuchar- Oír.",
+        "hu": "Hallgatni- Hallani."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-246",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué pareja de palabras no significan lo mismo?",
+    "hu": "Melyik szópár nem ugyanazt jelenti?",
+    "answers": [
+      {
+        "original": "Flaco- Delgado.",
+        "hu": "Sovány- Vékony."
+      },
+      {
+        "original": "Complejo- Difícil.",
+        "hu": "Bonyolult- Nehéz."
+      },
+      {
+        "original": "Remoto- Cercano.",
+        "hu": "Távoli- Közeli."
+      },
+      {
+        "original": "Boda- Matrimonio.",
+        "hu": "Esküvő- Házasság."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-247",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Actor es a escenario como profesor es a",
+    "hu": "A színész a színpadhoz úgy van, ahogy a tanár a",
+    "answers": [
+      {
+        "original": "Educación.",
+        "hu": "Oktatás."
+      },
+      {
+        "original": "Maestro.",
+        "hu": "Tanár."
+      },
+      {
+        "original": "Aula.",
+        "hu": "Tanterem."
+      },
+      {
+        "original": "Enseñanza.",
+        "hu": "Tanítás."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-248",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Coche es a conducir como bicicleta es a",
+    "hu": "A kocsi a vezetéshez hasonlóan a kerékpár a",
+    "answers": [
+      {
+        "original": "Navegar.",
+        "hu": "Hajózni."
+      },
+      {
+        "original": "Velocidad.",
+        "hu": "Sebesség."
+      },
+      {
+        "original": "Jugar.",
+        "hu": "Játszani."
+      },
+      {
+        "original": "Montar.",
+        "hu": "Biciklizni."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-249",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Rueda es a vehículo como raíz es a",
+    "hu": "A kerék a járműhöz olyan, mint a gyökér a",
+    "answers": [
+      {
+        "original": "Árbol.",
+        "hu": "Fa."
+      },
+      {
+        "original": "Abono.",
+        "hu": "Trágya."
+      },
+      {
+        "original": "Agua.",
+        "hu": "Víz."
+      },
+      {
+        "original": "Sol.",
+        "hu": "Nap."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-250",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Lo contrario de abrir es",
+    "hu": "Az 'abrir' ellentéte",
+    "answers": [
+      {
+        "original": "Elevar.",
+        "hu": "Emelni."
+      },
+      {
+        "original": "Cerrar.",
+        "hu": "Bezárni."
+      },
+      {
+        "original": "Desplegar.",
+        "hu": "Kibontani."
+      },
+      {
+        "original": "Descubrir.",
+        "hu": "Felfedezni."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-251",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Lo contrario de lejos es:",
+    "hu": "A 'lejos' ellentéte:",
+    "answers": [
+      {
+        "original": "Alejado.",
+        "hu": "Távoli."
+      },
+      {
+        "original": "Cerca.",
+        "hu": "Közel."
+      },
+      {
+        "original": "Distancia.",
+        "hu": "Távolság."
+      },
+      {
+        "original": "Metro.",
+        "hu": "Méter."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-252",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Lo contrario de fácil es",
+    "hu": "A 'fácil' ellentéte az",
+    "answers": [
+      {
+        "original": "Correcto.",
+        "hu": "Helyes."
+      },
+      {
+        "original": "Difícil.",
+        "hu": "Nehéz."
+      },
+      {
+        "original": "Sencillo",
+        "hu": "Egyszerű"
+      },
+      {
+        "original": "Ambiguo",
+        "hu": "Kétértelmű"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-253",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué palabra significa lo mismo que idéntico?",
+    "hu": "Melyik szó jelenti ugyanazt, mint az 'azonos'?",
+    "answers": [
+      {
+        "original": "Diferente.",
+        "hu": "Különböző."
+      },
+      {
+        "original": "Identificación.",
+        "hu": "Azonosítás."
+      },
+      {
+        "original": "Parecido.",
+        "hu": "Hasonló."
+      },
+      {
+        "original": "Igual.",
+        "hu": "Ugyanaz."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-254",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué palabra significa lo mismo que acabar?",
+    "hu": "Melyik szó jelent ugyanazt, mint az 'acabar'?",
+    "answers": [
+      {
+        "original": "Disminuir.",
+        "hu": "Csökkenni."
+      },
+      {
+        "original": "Comenzar.",
+        "hu": "Kezdeni."
+      },
+      {
+        "original": "Restar.",
+        "hu": "Kivonni."
+      },
+      {
+        "original": "Terminar.",
+        "hu": "Befejezni."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-255",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "De las siguientes palabras, una no guarda relación con el resto. ¿Cuál es?",
+    "hu": "A következő szavak közül az egyik nem áll kapcsolatban a többivel. Melyik?",
+    "answers": [
+      {
+        "original": "Dedo.",
+        "hu": "Ujj"
+      },
+      {
+        "original": "Brazo.",
+        "hu": "Kar"
+      },
+      {
+        "original": "Guante.",
+        "hu": "Kesztyű"
+      },
+      {
+        "original": "Mano.",
+        "hu": "Kéz"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-256",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Cuál de estas palabras no tiene relación con el resto?",
+    "hu": "Melyik ezek közül a szó nincs kapcsolatban a többivel?",
+    "answers": [
+      {
+        "original": "Riachuelo.",
+        "hu": "Patak"
+      },
+      {
+        "original": "Roble.",
+        "hu": "Tölgy"
+      },
+      {
+        "original": "Encina.",
+        "hu": "Holm tölgy"
+      },
+      {
+        "original": "Pino.",
+        "hu": "Fenyő"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-257",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué palabra no guarda relación con el resto?",
+    "hu": "Melyik szó nem áll kapcsolatban a többivel?",
+    "answers": [
+      {
+        "original": "Juventud.",
+        "hu": "Ifjúság."
+      },
+      {
+        "original": "Adolescencia.",
+        "hu": "Serdülőkor."
+      },
+      {
+        "original": "Escuela.",
+        "hu": "Iskola."
+      },
+      {
+        "original": "Vejez.",
+        "hu": "Időskor."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-258",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "¿Qué significa el refrán “De tal palo tal astilla”?",
+    "hu": "Mit jelent a „De tal palo tal astilla” közmondás?",
+    "answers": [
+      {
+        "original": "Los familiares no se parecen entre ellos.",
+        "hu": "A családtagok nem hasonlítanak egymásra."
+      },
+      {
+        "original": "Los hijos suelen parecerse a sus padres.",
+        "hu": "A gyerekek általában hasonlítanak a szüleikre."
+      },
+      {
+        "original": "Hay que tener cuidado con los palos para no clavarnos astillas.",
+        "hu": "Óvatosnak kell lenni a botokkal, nehogy szálkát kapjunk."
+      },
+      {
+        "original": "Los hijos no suelen parecerse a los padres.",
+        "hu": "A gyerekek általában nem hasonlítanak a szüleikre."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-259",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Coche es a conducir como bicicleta es a",
+    "hu": "Az autó olyan a vezetéshez, mint a kerékpár a",
+    "answers": [
+      {
+        "original": "Montar.",
+        "hu": "biciklizni"
+      },
+      {
+        "original": "Velocidad.",
+        "hu": "sebesség"
+      },
+      {
+        "original": "Jugar.",
+        "hu": "játszani"
+      },
+      {
+        "original": "Navegar.",
+        "hu": "hajózni"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-260",
+    "source": "new_questions.txt",
+    "module": "I",
+    "q": "Doctor es a hospital como mecánico es a",
+    "hu": "Az orvos ugyanúgy viszonyul a kórházhoz, mint a szerelő a",
+    "answers": [
+      {
+        "original": "Trabajo.",
+        "hu": "Munka."
+      },
+      {
+        "original": "Empleo.",
+        "hu": "Állás."
+      },
+      {
+        "original": "Coches.",
+        "hu": "Autók."
+      },
+      {
+        "original": "Taller.",
+        "hu": "Műhely."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-261",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Cuando una persona con discapacidad entre es su Autotaxi la actitud correcta es:",
+    "hu": "Amikor egy fogyatékossággal élő személy beszáll az Ön autótaxisába, a helyes magatartás a következő:",
+    "answers": [
+      {
+        "original": "Preguntar desde cuándo tiene la discapacidad.",
+        "hu": "Megkérdezni, mióta áll fenn a fogyatékossága."
+      },
+      {
+        "original": "No realizar preguntas relacionadas con la discapacidad ya que pertenecen a su intimidad.",
+        "hu": "Nem feltenni a fogyatékosságra vonatkozó kérdéseket, mivel azok az ő intimitásához tartoznak."
+      },
+      {
+        "original": "Realizar preguntas para averiguar por qué tiene discapacidad.",
+        "hu": "Kérdéseket feltenni azért, hogy megtudja, miért van fogyatékossága."
+      },
+      {
+        "original": "No hablar ni preguntar nada a la persona con discapacidad.",
+        "hu": "Nem beszélni, és semmit sem kérdezni a fogyatékossággal élő személytől."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-262",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Los vehículos no podrán superar la antigüedad de:",
+    "hu": "A járművek nem haladhatják meg az alábbi életkort:",
+    "answers": [
+      {
+        "original": "10 años contados desde su adquisición.",
+        "hu": "10 év az átvételüktől számítva."
+      },
+      {
+        "original": "9 años contados desde su adquisición.",
+        "hu": "9 év az átvételüktől számítva."
+      },
+      {
+        "original": "10 años contados desde su primera matriculación.",
+        "hu": "10 év az első forgalomba helyezésüktől számítva."
+      },
+      {
+        "original": "10 años contados desde su homologación.",
+        "hu": "10 év a homologizációjuktól számítva."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-263",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Cómo debe ser la carrocería de un vehículo autotaxi?",
+    "hu": "Hogyan kell lennie egy autotaxi jármű karosszériájának?",
+    "answers": [
+      {
+        "original": "Cerrada.",
+        "hu": "Zárt."
+      },
+      {
+        "original": "Cerrada o descapotable.",
+        "hu": "Zárt vagy nyitható tetejű."
+      },
+      {
+        "original": "Resistente.",
+        "hu": "Ellenálló."
+      },
+      {
+        "original": "Brillante.",
+        "hu": "Fényes."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-264",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Cuál es el número de plazas máximo en un vehículo autotaxi?",
+    "hu": "Mennyi a maximális férőhelyszám egy autótaxi járműben?",
+    "answers": [
+      {
+        "original": "No hay límite máximo regulado.",
+        "hu": "Nincs szabályozott maximális korlát."
+      },
+      {
+        "original": "9, incluido el conductor.",
+        "hu": "9, beleértve a vezetőt."
+      },
+      {
+        "original": "5, incluido el conductor.",
+        "hu": "5, beleértve a vezetőt."
+      },
+      {
+        "original": "9 más el conductor.",
+        "hu": "9 plusz a vezető."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-265",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Los vehículos autotaxi deberán ir provistos de:",
+    "hu": "Az autotaxi járműveket fel kell szerelni:",
+    "answers": [
+      {
+        "original": "Taxímetro únicamente.",
+        "hu": "Csak taxaméterrel."
+      },
+      {
+        "original": "Sistema tarifario integrado por taxímetro y módulo luminoso.",
+        "hu": "Taxaméterből és világító modulból álló tarifarendszer."
+      },
+      {
+        "original": "Todas son falsas.",
+        "hu": "Mindegyik hamis."
+      },
+      {
+        "original": "Taxímetro en el salpicadero.",
+        "hu": "Taxaméter a műszerfalon."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-266",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Los vehículos autotaxi deberán ir provistos de:",
+    "hu": "Az autotaxi járműveket fel kell szerelni:",
+    "answers": [
+      {
+        "original": "Alarma de exceso de horas.",
+        "hu": "Órák túllépését jelző riasztó."
+      },
+      {
+        "original": "Sistema de regulación para cumplir con las 16 horas.",
+        "hu": "Szabályozó rendszer a 16 óra betartásához."
+      },
+      {
+        "original": "Elemento de control horario.",
+        "hu": "Időellenőrző elem."
+      },
+      {
+        "original": "Tacógrafo.",
+        "hu": "Tachográf."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-267",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "El tique de la Impresora deberá contener:",
+    "hu": "A nyomtató jegyének tartalmaznia kell:",
+    "answers": [
+      {
+        "original": "Nacionalidad del pasajero.",
+        "hu": "Az utas állampolgársága."
+      },
+      {
+        "original": "Todas son correctas.",
+        "hu": "Mindegyik helyes."
+      },
+      {
+        "original": "Destino final del viajero.",
+        "hu": "Az utazó végső úti célja."
+      },
+      {
+        "original": "Origen y destino del viaje.",
+        "hu": "Az utazás kiindulási helye és célállomása."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-268",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Cómo debe ser la mampara de un vehículo autotaxi?",
+    "hu": "Hogyan kell lennie egy autotaxi jármű válaszfalának?",
+    "answers": [
+      {
+        "original": "De metacrilato.",
+        "hu": "Metakrilátból."
+      },
+      {
+        "original": "Transparente.",
+        "hu": "Áttetsző."
+      },
+      {
+        "original": "Blindada.",
+        "hu": "Páncélozott."
+      },
+      {
+        "original": "Antibalas.",
+        "hu": "Golyóálló."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-269",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Qué debe permitir la mampara en un vehículo de autotaxi?",
+    "hu": "Mit kell lehetővé tennie a mamparának egy autotaxi járműben?",
+    "answers": [
+      {
+        "original": "Debe permitir la intimidad de los viajeros.",
+        "hu": "Biztosítania kell az utasok intimitását."
+      },
+      {
+        "original": "Ha de contar con un altavoz bidireccional.",
+        "hu": "Kétirányú hangszóróval kell rendelkeznie."
+      },
+      {
+        "original": "Permitirá la comunicación visual entre el conductor y los usuarios.",
+        "hu": "Lehetővé teszi a vezető és az utasok közötti vizuális kommunikációt."
+      },
+      {
+        "original": "Permitirá la comunicación verbal entre el conductor y los usuarios.",
+        "hu": "Lehetővé teszi a vezető és az utasok közötti szóbeli kommunikációt."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-270",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿En qué color debe ir pintada la franja diagonal de un vehículo autotaxi?",
+    "hu": "Milyen színűre kell festeni az autotaxi jármű átlós sávját?",
+    "answers": [
+      {
+        "original": "Pintada en blanco.",
+        "hu": "Fehérre festve."
+      },
+      {
+        "original": "Pintada en verde.",
+        "hu": "Zöldre festve."
+      },
+      {
+        "original": "Pintada en azul.",
+        "hu": "Kékre festve."
+      },
+      {
+        "original": "Pintada en rojo.",
+        "hu": "Pirosra festve."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-271",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Debe un autotaxi llevar el distintivo ambiental?",
+    "hu": "Kell-e egy autótaxinak környezeti matrica?",
+    "answers": [
+      {
+        "original": "Sí.",
+        "hu": "Igen."
+      },
+      {
+        "original": "No, porque son todos cero y ECO.",
+        "hu": "Nem, mert mindegyikük CERO vagy ECO besorolású."
+      },
+      {
+        "original": "No, porque es un Servicio Público.",
+        "hu": "Nem, mert ez egy közszolgáltatás."
+      },
+      {
+        "original": "No, porque tapa la tarjeta identificativa.",
+        "hu": "Nem, mert eltakarja az azonosító kártyát."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-272",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Cuál es el número máximo de anuncios de marca permitidos en un eurotaxi?",
+    "hu": "Mi az egy eurotaxiban megengedett márkareklámok maximális száma?",
+    "answers": [
+      {
+        "original": "3.",
+        "hu": "3."
+      },
+      {
+        "original": "2.",
+        "hu": "2."
+      },
+      {
+        "original": "4.",
+        "hu": "4."
+      },
+      {
+        "original": "No hay número máximo.",
+        "hu": "Nincs maximális szám."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-273",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Para obtener el permiso municipal de conductor de autotaxi, ¿qué antigüedad mínima se exige en el permiso de conducción?",
+    "hu": "Az autótaxi-vezetői önkormányzati engedély megszerzéséhez a vezetői engedélyen milyen minimális időtartam meglétét írják elő?",
+    "answers": [
+      {
+        "original": "Ser mayor de edad.",
+        "hu": "Nagykorúnak lenni."
+      },
+      {
+        "original": "Seis meses.",
+        "hu": "Hat hónap."
+      },
+      {
+        "original": "Dos años.",
+        "hu": "Két év."
+      },
+      {
+        "original": "Un año.",
+        "hu": "Egy év."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-274",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Para obtener el permiso municipal de conductor de autotaxi será necesario:",
+    "hu": "Az autótaxi-vezetői önkormányzati engedély megszerzéséhez szükséges:",
+    "answers": [
+      {
+        "original": "Ser declarado apto en el examen que convoca a tal efecto el Ayuntamiento de Madrid.",
+        "hu": "Alkalmasnak nyilvánítsák azon a vizsgán, amelyet e célból a Madrid Önkormányzata hirdet meg."
+      },
+      {
+        "original": "Ser declarado apto en el examen que convoca a tal efecto la Policía Municipal.",
+        "hu": "Alkalmasnak nyilvánítsák azon a vizsgán, amelyet e célból az önkormányzati rendőrség hirdet meg."
+      },
+      {
+        "original": "Ser declarado apto en el examen que convoca la subdelegación del Gobierno.",
+        "hu": "Alkalmasnak nyilvánítsák azon a vizsgán, amelyet a Kormány aldelegációja hirdet meg."
+      },
+      {
+        "original": "Ser declarado apto en el examen que convoca a tal efecto la Consejería de Transportes.",
+        "hu": "Alkalmasnak nyilvánítsák azon a vizsgán, amelyet e célból a Közlekedési Minisztérium hirdet meg."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-275",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "El acuerdo de iniciación del procedimiento de extinción del permiso municipal de conductor de autotaxi contendrá:",
+    "hu": "Az autótaxi-vezetői önkormányzati engedély megszüntetésére irányuló eljárás megindításáról szóló határozat tartalmazni fogja:",
+    "answers": [
+      {
+        "original": "Relación de testimonios de la denuncia.",
+        "hu": "A feljelentés tanúvallomásainak felsorolása."
+      },
+      {
+        "original": "Relación de las personas intervinientes en los hechos objeto de análisis.",
+        "hu": "A vizsgálat tárgyát képező tényekben közreműködő személyek felsorolása."
+      },
+      {
+        "original": "Relación de los hechos y circunstancias que induzcan a apreciar que se van a perder en un futuro los requisitos para su obtención.",
+        "hu": "A tények és körülmények felsorolása, amelyek arra indítanak, hogy megállapítsuk: a jövőben elvesznek a megszerzéséhez szükséges követelmények."
+      },
+      {
+        "original": "Relación de los hechos y circunstancias que induzcan a apreciar, racional y fundadamente, que carece de alguno de los requisitos que se exigieron para su obtención.",
+        "hu": "A tények és körülmények felsorolása, amelyek racionálisan és megalapozottan arra indítanak, hogy megállapítsuk: hiányzik belőle valamelyik a megszerzéséhez megkövetelt feltételek közül."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-276",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Qué debe contener necesariamente la tarjeta de identificación del conductor de un vehículo de autotaxi?",
+    "hu": "Mit kell feltétlenül tartalmaznia az autotaxi jármű vezetőjének azonosító kártyájának?",
+    "answers": [
+      {
+        "original": "Nombre y apellidos del conductor y su fotografía.",
+        "hu": "A vezető családi és utóneve és a fényképe."
+      },
+      {
+        "original": "Nombre y apellidos del conductor y del titular de la licencia.",
+        "hu": "A vezető és a jogosítvány tulajdonosának családi és utóneve."
+      },
+      {
+        "original": "Todas son falsas.",
+        "hu": "Mind hamisak."
+      },
+      {
+        "original": "Nombre y apellidos del titular de la licencia.",
+        "hu": "A jogosítvány tulajdonosának családi és utóneve."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-277",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "La titularidad de licencia de autotaxi será compatible con el ejercicio de cualquier otra actividad:",
+    "hu": "Az autótaxi-engedély birtoklása összeegyeztethető bármely más tevékenység gyakorlásával:",
+    "answers": [
+      {
+        "original": "Industrial.",
+        "hu": "Ipari."
+      },
+      {
+        "original": "Comercial.",
+        "hu": "Kereskedelmi."
+      },
+      {
+        "original": "Mercantil.",
+        "hu": "Üzleti."
+      },
+      {
+        "original": "Todas son correctas.",
+        "hu": "Mindegyik helyes."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-278",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Con carácter general, la licencia número 1448, ¿qué día descansará?",
+    "hu": "Általánosságban véve, a 1448-as engedély melyik napon fog pihenni?",
+    "answers": [
+      {
+        "original": "Martes.",
+        "hu": "Kedd."
+      },
+      {
+        "original": "Miércoles.",
+        "hu": "Szerda."
+      },
+      {
+        "original": "Jueves.",
+        "hu": "Csütörtök."
+      },
+      {
+        "original": "Lunes.",
+        "hu": "Hétfő."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-279",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Las licencias cuyos ordinales terminen en número par…",
+    "hu": "Azok az engedélyek, amelyek sorszámai páros számra végződnek…",
+    "answers": [
+      {
+        "original": "Descansarán los sábados y domingos impares.",
+        "hu": "Pihenni fognak a páratlan szombatokon és vasárnapokon."
+      },
+      {
+        "original": "Trabajarán los sábados y domingos impares.",
+        "hu": "Dolgozni fognak a páratlan szombatokon és vasárnapokon."
+      },
+      {
+        "original": "Trabajarán los sábados pares y los domingos impares.",
+        "hu": "Dolgozni fognak a páros szombatokon és a páratlan vasárnapokon."
+      },
+      {
+        "original": "Descansarán los sábados y domingos pares.",
+        "hu": "Pihenni fognak a páros szombatokon és vasárnapokon."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-280",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Cuándo puede negarse a transportar el conductor de un autotaxi un perro de asistencia?",
+    "hu": "Mikor tagadhatja meg egy autotaxi vezetője, hogy szállítson egy segítő kutyát?",
+    "answers": [
+      {
+        "original": "Si no va en jaula.",
+        "hu": "Ha nincs ketrecben."
+      },
+      {
+        "original": "Nunca.",
+        "hu": "Soha."
+      },
+      {
+        "original": "Si es alérgico a los animales.",
+        "hu": "Ha allergiás az állatokra."
+      },
+      {
+        "original": "Si no cabe en el maletero.",
+        "hu": "Ha nem fér be a csomagtartóba."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "seed-281",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Es causa de interrupción provisional del taxímetro una parada producida por:",
+    "hu": "A taxióra ideiglenes megszakításának oka egy megállás, amelyet:",
+    "answers": [
+      {
+        "original": "Invasión del carril bus taxi.",
+        "hu": "Behajtás a busz-taxi sávba."
+      },
+      {
+        "original": "Retraso.",
+        "hu": "Késés."
+      },
+      {
+        "original": "Accidente.",
+        "hu": "Baleset."
+      },
+      {
+        "original": "Atasco.",
+        "hu": "Forgalmi torlódás."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-282",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Qué le puede cobrar el conductor a un pasajero en caso de accidente que haga imposible continuar el servicio?",
+    "hu": "Mit kérhet a sofőr egy utastól abban az esetben, ha egy baleset lehetetlenné teszi a szolgáltatás folytatását?",
+    "answers": [
+      {
+        "original": "Lo que lleve marcado el taxímetro ese momento.",
+        "hu": "Amit a taxaméter abban a pillanatban mutat."
+      },
+      {
+        "original": "Nada.",
+        "hu": "Semmit."
+      },
+      {
+        "original": "Dependerá de quién sea la culpa del accidente.",
+        "hu": "Attól függ, hogy kinek volt a hibája a balesetnek."
+      },
+      {
+        "original": "El importe del servicio hasta ese momento, descontada la cuantía del inicio de servicio.",
+        "hu": "A szolgáltatás eddigi díja, levonva az indulási díj összegét."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "seed-283",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Durante la prestación del servicio es obligatorio llevar a bordo del vehículo:",
+    "hu": "A szolgáltatás nyújtása során kötelező a járművön tartani:",
+    "answers": [
+      {
+        "original": "Permiso municipal de conductor de autotaxi.",
+        "hu": "Autótaxi-vezetői önkormányzati engedély."
+      },
+      {
+        "original": "Certificado de antecedentes penales por delitos sexuales.",
+        "hu": "Bűnügyi előéleti igazolás szexuális bűncselekményekről."
+      },
+      {
+        "original": "Certificado médico de no padecimiento de enfermedad infectocontagiosa.",
+        "hu": "Orvosi igazolás arról, hogy nem szenved fertőző betegségben."
+      },
+      {
+        "original": "Título de la ESO o equivalente.",
+        "hu": "A kötelező középfokú oktatás bizonyítványa vagy azzal egyenértékű."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-284",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Puede un usuario comer o beber en el taxi?",
+    "hu": "Egy utas ehet vagy ihat a taxiban?",
+    "answers": [
+      {
+        "original": "Solo beber.",
+        "hu": "Csak inni."
+      },
+      {
+        "original": "Sí.",
+        "hu": "Igen."
+      },
+      {
+        "original": "No.",
+        "hu": "Nem."
+      },
+      {
+        "original": "Solo comer.",
+        "hu": "Csak enni."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "seed-285",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "¿Hasta qué cantidad están obligados los conductores a devolver el cambio de moneda?",
+    "hu": "Mekkora összegig kötelesek a járművezetők visszaadni a visszajáró pénzt?",
+    "answers": [
+      {
+        "original": "20 euros.",
+        "hu": "20 euró."
+      },
+      {
+        "original": "20 euros o dólares.",
+        "hu": "20 euró vagy 20 dollár."
+      },
+      {
+        "original": "50 euros.",
+        "hu": "50 euró."
+      },
+      {
+        "original": "20 euros en caso de pago por Bizum o tarjeta.",
+        "hu": "20 euró Bizum vagy kártyás fizetés esetén."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "seed-286",
+    "source": "new_questions.txt",
+    "module": "IV",
+    "q": "Si no fuera posible seguir el itinerario elegido por el viajero o el más directo, el conductor podrá:",
+    "hu": "Ha nem lenne lehetséges követni az utazó által választott útvonalat vagy a legközvetlenebb útvonalat, a járművezető megteheti:",
+    "answers": [
+      {
+        "original": "Elegir otro alternativo y comunicarlo al pasajero que deberá manifestar su conformidad.",
+        "hu": "Másik alternatívát választani és azt közölni az utassal, akinek kifejeznie kell az egyetértését."
+      },
+      {
+        "original": "Dar por finalizado el servicio.",
+        "hu": "A szolgáltatást befejezettnek nyilvánítani."
+      },
+      {
+        "original": "Elegir otro alternativo.",
+        "hu": "Másik alternatívát választani."
+      },
+      {
+        "original": "Elegir otro alternativo y comunicarlo al pasajero.",
+        "hu": "Másik alternatívát választani és azt közölni az utassal."
+      }
+    ],
+    "correctIndex": 0
+  },
 ];
