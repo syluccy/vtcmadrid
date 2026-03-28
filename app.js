@@ -117,6 +117,10 @@ function isExamComplete() {
   return state.examQuestions.every((q) => Number.isInteger(state.answers[q.id]));
 }
 
+function getFirstUnansweredIndex() {
+  return state.examQuestions.findIndex((q) => !Number.isInteger(state.answers[q.id]));
+}
+
 function countCorrectForQuestionSet(questions) {
   let correct = 0;
   for (const q of questions) {
@@ -195,6 +199,16 @@ function renderLiveStats() {
   `;
 }
 
+function renderQuestionTranslation(question) {
+  if (!question.hu) return '';
+  return `
+    <details class="translation-toggle">
+      <summary>Magyar fordítás</summary>
+      <div class="question-hu">${escapeHtml(question.hu)}</div>
+    </details>
+  `;
+}
+
 function renderExamView() {
   const question = state.examQuestions[state.currentIndex];
   const chosenIndex = state.answers[question.id];
@@ -250,6 +264,7 @@ function renderExamView() {
         </div>
 
         <h2 class="question-title">${escapeHtml(question.q)}</h2>
+        ${renderQuestionTranslation(question)}
 
         <div class="answers-list">
           ${answersHtml}
@@ -263,7 +278,7 @@ function renderExamView() {
 
         ${
           isLastQuestion
-            ? `<button id="finish-btn" class="primary-btn" ${isExamComplete() ? '' : 'disabled'}>Teszt befejezése</button>`
+            ? `<button id="finish-btn" class="primary-btn">Teszt befejezése</button>`
             : `<button id="next-btn" class="primary-btn">Következő</button>`
         }
       </div>
@@ -299,9 +314,18 @@ function renderExamView() {
   });
 
   document.getElementById('finish-btn')?.addEventListener('click', () => {
-    if (!isExamComplete()) return;
-
     lockCurrentAnswer();
+
+    const firstUnanswered = getFirstUnansweredIndex();
+
+    if (firstUnanswered !== -1) {
+      state.currentIndex = firstUnanswered;
+      saveState();
+      alert(`Van még megválaszolatlan kérdés. Átugrottam az első kihagyott kérdéshez (#${firstUnanswered + 1}).`);
+      renderExamView();
+      return;
+    }
+
     state.submitted = true;
     state.resultsFilter = 'wrong';
     saveState();
@@ -330,7 +354,12 @@ function createResultAnswerLine(answer, index, question, userAnswer) {
         <strong>${String.fromCharCode(65 + index)}.</strong>
         ${escapeHtml(answer.original)}
       </div>
-      ${answer.hu ? `<div class="result-answer-hu">${escapeHtml(answer.hu)}</div>` : ''}
+      ${answer.hu ? `
+        <details class="translation-toggle answer-toggle">
+          <summary>Magyar fordítás</summary>
+          <div class="result-answer-hu">${escapeHtml(answer.hu)}</div>
+        </details>
+      ` : ''}
       <div class="result-flags">
         ${isChosen ? '<span class="flag chosen">Te ezt jelölted</span>' : ''}
         ${isCorrect ? '<span class="flag correct">Helyes válasz</span>' : ''}
@@ -357,7 +386,12 @@ function createResultCard(question, indexInModule) {
       </div>
 
       <div class="result-question-original">${escapeHtml(question.q)}</div>
-      ${question.hu ? `<div class="result-question-hu">${escapeHtml(question.hu)}</div>` : ''}
+      ${question.hu ? `
+        <details class="translation-toggle">
+          <summary>Magyar fordítás</summary>
+          <div class="result-question-hu">${escapeHtml(question.hu)}</div>
+        </details>
+      ` : ''}
 
       <ol class="result-answers">
         ${answersHtml}
