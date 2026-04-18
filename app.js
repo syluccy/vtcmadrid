@@ -1,15 +1,45 @@
 import { RULES, questionBank } from './questions.js';
 
 const app = document.getElementById('app');
-const STORAGE_KEY = 'vtc_exam_state';
+const STORAGE_KEY = 'vtc_exam_state_hu';
 
-const state = {
-  examQuestions: [],
-  answers: {},
-  lockedAnswers: {},
-  submitted: false,
-  currentIndex: 0,
-  resultsFilter: 'wrong',
+const MODULE_META = {
+  I: {
+    key: 'I',
+    title: 'Módulo I',
+    huTitle: '1. modul',
+    hu: 'Spanyol nyelvismeret; nyelvtan és szókincs.',
+    es: 'Conocimiento de la lengua castellana; gramática y léxico.',
+    take: 12,
+    pass: 6,
+  },
+  II: {
+    key: 'II',
+    title: 'Módulo II',
+    huTitle: '2. modul',
+    hu: 'Földrajzi és közlekedési ismeretek; navigáció, útvonalak és fontos célpontok.',
+    es: 'Conocimiento del medio físico; como sistemas de navegación, itinerarios y destinos de interés, etc.',
+    take: 18,
+    pass: 9,
+  },
+  III: {
+    key: 'III',
+    title: 'Módulo III',
+    huTitle: '3. modul',
+    hu: 'Akadálymentesség és közszolgáltatás; ügyfélkezelés, fogyatékkal élők, kiskorúak és háziállatok.',
+    es: 'Conocimiento de la accesibilidad y servicio público; atención al cliente, usuarios con discapacidad, menores de edad y animales domésticos, etc.',
+    take: 18,
+    pass: 9,
+  },
+  IV: {
+    key: 'IV',
+    title: 'Módulo IV',
+    huTitle: '4. modul',
+    hu: 'A személyszállítási tevékenységre vonatkozó jogi keret ismerete.',
+    es: 'Conocimiento del marco jurídico aplicable a la actividad de transporte de viajeros.',
+    take: 12,
+    pass: 6,
+  },
 };
 
 const moduleOrder = ['I', 'II', 'III', 'IV'];
@@ -19,6 +49,17 @@ const moduleTitles = {
   II: 'Módulo II',
   III: 'Módulo III',
   IV: 'Módulo IV',
+};
+
+const state = {
+  mode: 'menu', // menu | exam | practice
+  practiceModule: null,
+  examQuestions: [],
+  answers: {},
+  lockedAnswers: {},
+  submitted: false,
+  currentIndex: 0,
+  resultsFilter: 'wrong',
 };
 
 function shuffle(array) {
@@ -39,8 +80,36 @@ function escapeHtml(value) {
     .replaceAll("'", '&#39;');
 }
 
+function trackEvent(eventName, params = {}) {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params);
+  }
+}
+
+function buildAnalyticsPayload(extra = {}) {
+  return {
+    mode: state.mode === 'practice' ? 'practice' : 'exam',
+    module: state.mode === 'practice' && state.practiceModule ? state.practiceModule : 'all',
+    ...extra,
+  };
+}
+
+function getPracticePassed() {
+  if (!(state.mode === 'practice' && state.practiceModule)) return false;
+  return countCorrectOverall() >= MODULE_META[state.practiceModule].pass;
+}
+
+function getFullExamPassed() {
+  return moduleOrder.every((moduleKey) => {
+    const correct = countCorrectForModule(moduleKey);
+    return correct >= RULES[moduleKey].pass;
+  });
+}
+
 function saveState() {
   const snapshot = {
+    mode: state.mode,
+    practiceModule: state.practiceModule,
     examQuestions: state.examQuestions,
     answers: state.answers,
     lockedAnswers: state.lockedAnswers,
@@ -58,20 +127,22 @@ function loadState() {
   try {
     const parsed = JSON.parse(raw);
 
-    if (!Array.isArray(parsed.examQuestions) || parsed.examQuestions.length === 0) {
-      return false;
-    }
-
-    state.examQuestions = parsed.examQuestions;
+    state.mode = parsed.mode ?? 'menu';
+    state.practiceModule = parsed.practiceModule ?? null;
+    state.examQuestions = Array.isArray(parsed.examQuestions) ? parsed.examQuestions : [];
     state.answers = parsed.answers ?? {};
     state.lockedAnswers = parsed.lockedAnswers ?? {};
     state.submitted = Boolean(parsed.submitted);
     state.currentIndex = Number.isInteger(parsed.currentIndex) ? parsed.currentIndex : 0;
     state.resultsFilter = parsed.resultsFilter === 'all' ? 'all' : 'wrong';
 
-    if (state.currentIndex < 0) state.currentIndex = 0;
-    if (state.currentIndex >= state.examQuestions.length) {
-      state.currentIndex = state.examQuestions.length - 1;
+    if (state.examQuestions.length > 0) {
+      if (state.currentIndex < 0) state.currentIndex = 0;
+      if (state.currentIndex >= state.examQuestions.length) {
+        state.currentIndex = state.examQuestions.length - 1;
+      }
+    } else {
+      state.currentIndex = 0;
     }
 
     return true;
@@ -86,6 +157,13 @@ function clearState() {
 
 function getQuestionsByModule(moduleKey) {
   return questionBank.filter((q) => q.module === moduleKey);
+}
+
+function getCurrentModeMeta() {
+  if (state.mode === 'practice' && state.practiceModule) {
+    return MODULE_META[state.practiceModule];
+  }
+  return null;
 }
 
 function buildExam() {
@@ -104,7 +182,34 @@ function buildExam() {
     selected.push(...shuffle(pool).slice(0, needed));
   }
 
+  state.mode = 'exam';
+  state.practiceModule = null;
   state.examQuestions = shuffle(selected);
+  state.answers = {};
+  state.lockedAnswers = {};
+  state.submitted = false;
+  state.currentIndex = 0;
+  state.resultsFilter = 'wrong';
+  saveState();
+}
+
+function buildPracticeExam(moduleKey) {
+  const config = MODULE_META[moduleKey];
+  const pool = getQuestionsByModule(moduleKey);
+
+  if (!config) {
+    throw new Error('Ismeretlen modul.');
+  }
+
+  if (pool.length < config.take) {
+    throw new Error(
+      `${config.huTitle} kérdésbankja nem tartalmaz elég kérdést. Megvan: ${pool.length}, kellene: ${config.take}`
+    );
+  }
+
+  state.mode = 'practice';
+  state.practiceModule = moduleKey;
+  state.examQuestions = shuffle(pool).slice(0, config.take);
   state.answers = {};
   state.lockedAnswers = {};
   state.submitted = false;
@@ -170,7 +275,34 @@ function lockCurrentAnswer() {
   }
 }
 
+function renderQuestionTranslation(question) {
+  if (!question.hu) return '';
+  return `
+    <details class="translation-toggle">
+      <summary>Magyar fordítás</summary>
+      <div class="question-hu">${escapeHtml(question.hu)}</div>
+    </details>
+  `;
+}
+
 function renderLiveStats() {
+  if (state.mode === 'practice' && state.practiceModule) {
+    const mod = MODULE_META[state.practiceModule];
+    const totalCorrect = countCorrectOverall();
+
+    return `
+      <section class="live-stats">
+        <div class="live-stats-modules">
+          <div class="module-mini-card">
+            <div class="module-mini-title">${escapeHtml(mod.huTitle)} • ${escapeHtml(mod.title)}</div>
+            <div class="module-mini-value">${totalCorrect} / ${mod.take}</div>
+            <div class="module-mini-pass">Teljesítéshez: ${mod.pass}</div>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
   const totalCorrect = countCorrectOverall();
 
   return `
@@ -190,7 +322,7 @@ function renderLiveStats() {
             <div class="module-mini-card">
               <div class="module-mini-title">${escapeHtml(moduleTitles[moduleKey])}</div>
               <div class="module-mini-value">${correct} / ${rule.take}</div>
-              <div class="module-mini-pass">minimum ${rule.pass}</div>
+              <div class="module-mini-pass">Teljesítéshez: ${rule.pass}</div>
             </div>
           `;
         }).join('')}
@@ -199,14 +331,109 @@ function renderLiveStats() {
   `;
 }
 
-function renderQuestionTranslation(question) {
-  if (!question.hu) return '';
-  return `
-    <details class="translation-toggle">
-      <summary>Magyar fordítás</summary>
-      <div class="question-hu">${escapeHtml(question.hu)}</div>
-    </details>
+function renderHome() {
+  app.innerHTML = `
+    <div class="page home-page">
+      <header class="topbar">
+        <div>
+          <h1>VTC Vizsgagyakorló V3</h1>
+          <p>Válaszd ki, hogyan szeretnél tanulni.</p>
+        </div>
+      </header>
+
+      <section class="welcome-card">
+        <h2>Indítás</h2>
+        <p>Indíthatsz teljes vizsgaszimulációt vagy gyakorolhatsz egyetlen modult külön.</p>
+
+        <div class="mode-select">
+          <button id="start-full-exam" class="primary-btn">Vizsga indítása</button>
+          <button id="start-practice-mode" class="secondary-btn">Gyakorlás modulonként</button>
+        </div>
+      </section>
+    </div>
   `;
+
+  document.getElementById('start-full-exam')?.addEventListener('click', () => {
+    buildExam();
+    trackEvent('quiz_start', {
+      ...buildAnalyticsPayload({
+        total_questions: state.examQuestions.length,
+      }),
+    });
+    renderExamView();
+  });
+
+  document.getElementById('start-practice-mode')?.addEventListener('click', () => {
+    renderPracticeModuleSelect();
+  });
+}
+
+function renderPracticeModuleSelect() {
+  app.innerHTML = `
+    <div class="page">
+      <header class="topbar">
+        <div>
+          <h1>Gyakorló mód</h1>
+          <p>Válassz modult a célzott gyakorláshoz.</p>
+        </div>
+
+        <div class="topbar-actions">
+          <button id="back-home-btn" class="secondary-btn">Vissza</button>
+        </div>
+      </header>
+
+      <section class="module-grid">
+        ${moduleOrder.map((moduleKey) => {
+          const mod = MODULE_META[moduleKey];
+          return `
+            <article class="module-card" data-module="${mod.key}">
+              <div class="module-card-head">
+                <span class="module-badge">${escapeHtml(mod.title)}</span>
+                <span class="question-number">${mod.take} kérdés</span>
+              </div>
+
+              <h2>${escapeHtml(mod.huTitle)}</h2>
+              <p class="module-desc-es">${escapeHtml(mod.es)}</p>
+              <details class="translation-toggle">
+                <summary>Magyar fordítás</summary>
+                <div class="question-hu">${escapeHtml(mod.hu)}</div>
+              </details>
+
+              <div class="module-card-footer">
+                <span>Teljesítéshez: ${mod.pass} helyes válasz</span>
+                <button class="primary-btn module-start-btn" data-module="${mod.key}">Modul gyakorlása</button>
+              </div>
+            </article>
+          `;
+        }).join('')}
+      </section>
+    </div>
+  `;
+
+  document.getElementById('back-home-btn')?.addEventListener('click', () => {
+    renderHome();
+  });
+
+  document.querySelectorAll('.module-start-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const moduleKey = btn.dataset.module;
+
+      trackEvent('module_selected', {
+        mode: 'practice',
+        module: moduleKey,
+      });
+
+      buildPracticeExam(moduleKey);
+
+      trackEvent('practice_start', {
+        ...buildAnalyticsPayload({
+          total_questions: state.examQuestions.length,
+        }),
+      });
+
+      renderExamView();
+    });
+  });
 }
 
 function renderExamView() {
@@ -214,6 +441,7 @@ function renderExamView() {
   const chosenIndex = state.answers[question.id];
   const isLastQuestion = state.currentIndex === state.examQuestions.length - 1;
   const progressPercent = Math.round(((state.currentIndex + 1) / state.examQuestions.length) * 100);
+  const practiceMeta = getCurrentModeMeta();
 
   const answersHtml = question.answers
     .map((answer, index) => {
@@ -242,12 +470,18 @@ function renderExamView() {
     <div class="page">
       <header class="topbar">
         <div>
-          <h1>VTC Vizsgagyakorló</h1>
-          <p>Kérdés ${state.currentIndex + 1} / ${state.examQuestions.length}</p>
+          <h1>VTC Vizsgagyakorló V3</h1>
+          <p>
+            ${
+              state.mode === 'practice' && practiceMeta
+                ? `Gyakorló mód • ${escapeHtml(practiceMeta.huTitle)} • ${state.currentIndex + 1} / ${state.examQuestions.length}`
+                : `Teljes vizsga • ${state.currentIndex + 1} / ${state.examQuestions.length}`
+            }
+          </p>
         </div>
 
         <div class="topbar-actions">
-          <button id="new-exam-btn" class="secondary-btn">Új teszt</button>
+          <button id="new-exam-btn" class="secondary-btn">Új kezdés</button>
         </div>
       </header>
 
@@ -256,6 +490,25 @@ function renderExamView() {
           <div class="progress-bar-fill" style="width:${progressPercent}%"></div>
         </div>
       </div>
+
+      ${
+        state.mode === 'practice' && practiceMeta
+          ? `
+            <section class="practice-info-box">
+              <div class="practice-info-head">
+                <span class="module-badge">${escapeHtml(practiceMeta.title)}</span>
+                <span class="question-number">${practiceMeta.take} kérdés</span>
+              </div>
+              <div class="practice-info-es">${escapeHtml(practiceMeta.es)}</div>
+              <details class="translation-toggle">
+                <summary>Magyar fordítás</summary>
+                <div class="question-hu">${escapeHtml(practiceMeta.hu)}</div>
+              </details>
+              <div class="practice-info-pass">Teljesítéshez: ${practiceMeta.pass} helyes válasz</div>
+            </section>
+          `
+          : ''
+      }
 
       <article class="question-card single-question">
         <div class="question-meta">
@@ -329,13 +582,33 @@ function renderExamView() {
     state.submitted = true;
     state.resultsFilter = 'wrong';
     saveState();
+
+    if (state.mode === 'practice' && state.practiceModule) {
+      const passed = getPracticePassed();
+      trackEvent('practice_complete', {
+        ...buildAnalyticsPayload({
+          score: countCorrectOverall(),
+          total_questions: state.examQuestions.length,
+          passed: passed ? 'true' : 'false',
+        }),
+      });
+    } else {
+      const passed = getFullExamPassed();
+      trackEvent('quiz_complete', {
+        ...buildAnalyticsPayload({
+          score: countCorrectOverall(),
+          total_questions: state.examQuestions.length,
+          passed: passed ? 'true' : 'false',
+        }),
+      });
+    }
+
     renderResultsView();
   });
 
   document.getElementById('new-exam-btn')?.addEventListener('click', () => {
     clearState();
-    buildExam();
-    renderExamView();
+    renderHome();
   });
 }
 
@@ -400,7 +673,98 @@ function createResultCard(question, indexInModule) {
   `;
 }
 
-function renderResultsView() {
+function renderPracticeResultsView() {
+  const mod = MODULE_META[state.practiceModule];
+  const correct = countCorrectOverall();
+  const passed = correct >= mod.pass;
+  const filteredQuestions = getFilteredQuestions(state.examQuestions);
+
+  const detailsHtml = filteredQuestions.length
+    ? filteredQuestions.map((q, idx) => createResultCard(q, idx + 1)).join('')
+    : `
+      <article class="result-card ok">
+        <div class="result-card-head">
+          <span class="question-number">0</span>
+          <span class="result-status ok">Nincs találat</span>
+        </div>
+        <div class="result-question-original">
+          ${
+            state.resultsFilter === 'wrong'
+              ? 'Ebben a modulban nincs hibás válasz.'
+              : 'Ebben a modulban nincs megjeleníthető kérdés.'
+          }
+        </div>
+      </article>
+    `;
+
+  app.innerHTML = `
+    <div class="page">
+      <header class="topbar">
+        <div>
+          <h1>Modul eredménye</h1>
+          <p class="final-status ${passed ? 'pass' : 'fail'}">
+            ${passed ? 'Átmentél' : 'Nem mentél át'}
+          </p>
+        </div>
+
+        <div class="topbar-actions">
+          <button id="filter-wrong-btn" class="${state.resultsFilter === 'wrong' ? 'primary-btn' : 'secondary-btn'}">Csak rossz válaszok</button>
+          <button id="filter-all-btn" class="${state.resultsFilter === 'all' ? 'primary-btn' : 'secondary-btn'}">Minden válasz</button>
+          <button id="retry-practice-btn" class="secondary-btn">Új gyakorlás</button>
+          <button id="review-btn" class="primary-btn">Vissza a teszthez</button>
+        </div>
+      </header>
+
+      <section class="summary-grid">
+        <div class="summary-card ${passed ? 'pass' : 'fail'}">
+          <h3>${escapeHtml(mod.huTitle)} • ${escapeHtml(mod.title)}</h3>
+          <p>${correct} / ${mod.take}</p>
+          <p>Teljesítéshez: ${mod.pass}</p>
+          <strong>${passed ? 'Átmentél' : 'Nem mentél át'}</strong>
+        </div>
+      </section>
+
+      <section class="module-section">
+        <div class="module-header">
+          <h2>${escapeHtml(mod.huTitle)}</h2>
+          <p>${escapeHtml(mod.es)}</p>
+          <details class="translation-toggle">
+            <summary>Magyar fordítás</summary>
+            <div class="question-hu">${escapeHtml(mod.hu)}</div>
+          </details>
+        </div>
+        <div class="result-grid">
+          ${detailsHtml}
+        </div>
+      </section>
+    </div>
+  `;
+
+  document.getElementById('filter-wrong-btn')?.addEventListener('click', () => {
+    state.resultsFilter = 'wrong';
+    saveState();
+    renderPracticeResultsView();
+  });
+
+  document.getElementById('filter-all-btn')?.addEventListener('click', () => {
+    state.resultsFilter = 'all';
+    saveState();
+    renderPracticeResultsView();
+  });
+
+  document.getElementById('retry-practice-btn')?.addEventListener('click', () => {
+    clearState();
+    renderPracticeModuleSelect();
+  });
+
+  document.getElementById('review-btn')?.addEventListener('click', () => {
+    state.submitted = false;
+    saveState();
+    renderExamView();
+  });
+}
+
+function renderFullExamResultsView() {
   const grouped = groupExamByModule();
 
   const moduleSummaries = moduleOrder.map((moduleKey) => {
@@ -418,8 +782,6 @@ function renderResultsView() {
       pass,
       passed,
       questions: filteredQuestions,
-      totalQuestions: allQuestions.length,
-      shownQuestions: filteredQuestions.length,
     };
   });
 
@@ -431,7 +793,7 @@ function renderResultsView() {
         <div class="summary-card ${m.passed ? 'pass' : 'fail'}">
           <h3>${escapeHtml(moduleTitles[m.moduleKey])}</h3>
           <p>${m.correct} / ${m.take}</p>
-          <p>Minimum: ${m.pass}</p>
+          <p>Teljesítéshez: ${m.pass}</p>
           <strong>${m.passed ? 'Átmentél' : 'Nem mentél át'}</strong>
         </div>
       `
@@ -464,7 +826,7 @@ function renderResultsView() {
             <h2>${escapeHtml(moduleTitles[moduleSummary.moduleKey])}</h2>
             <p>
               ${moduleSummary.correct} / ${moduleSummary.take}
-              • minimum ${moduleSummary.pass}
+              • teljesítéshez: ${moduleSummary.pass}
               • <strong>${moduleSummary.passed ? 'Átmentél' : 'Nem mentél át'}</strong>
             </p>
           </div>
@@ -504,19 +866,18 @@ function renderResultsView() {
   document.getElementById('filter-wrong-btn')?.addEventListener('click', () => {
     state.resultsFilter = 'wrong';
     saveState();
-    renderResultsView();
+    renderFullExamResultsView();
   });
 
   document.getElementById('filter-all-btn')?.addEventListener('click', () => {
     state.resultsFilter = 'all';
     saveState();
-    renderResultsView();
+    renderFullExamResultsView();
   });
 
   document.getElementById('retry-btn')?.addEventListener('click', () => {
     clearState();
-    buildExam();
-    renderExamView();
+    renderHome();
   });
 
   document.getElementById('review-btn')?.addEventListener('click', () => {
@@ -526,12 +887,22 @@ function renderResultsView() {
   });
 }
 
+function renderResultsView() {
+  if (state.mode === 'practice' && state.practiceModule) {
+    renderPracticeResultsView();
+    return;
+  }
+
+  renderFullExamResultsView();
+}
+
 function init() {
   try {
     const restored = loadState();
 
-    if (!restored) {
-      buildExam();
+    if (!restored || state.mode === 'menu' || state.examQuestions.length === 0) {
+      renderHome();
+      return;
     }
 
     if (state.submitted) {
