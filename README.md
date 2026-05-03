@@ -9,9 +9,9 @@ The primary language is Castellano (ES), but there are Hungarian aids available.
 
 ## Question bank
 
-Current total: 298 questions.
+Current total: 333 questions.
 
-- Module I: 87 questions
+- Module I: 122 questions
 - Module II: 71 questions
 - Module III: 69 questions
 - Module IV: 71 questions

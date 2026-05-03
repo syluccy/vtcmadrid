@@ -4,21 +4,20 @@ import { questionBank } from '../questions.js';
 const VALID_MODULES = new Set(['I', 'II', 'III', 'IV']);
 const DEFAULT_INPUT = new URL('../data/proformatrans-test1.questions.json', import.meta.url);
 const QUESTIONS_FILE = new URL('../questions.js', import.meta.url);
-const SOURCE = 'proformatrans-test1';
 
 function isNonEmptyString(value) {
   return typeof value === 'string' && value.trim().length > 0;
 }
 
-function normalizeQuestion(question, index) {
+function normalizeQuestion(question, index, source) {
   return {
     ...question,
-    source: SOURCE,
-    id: question.id || `${SOURCE}-${String(index + 1).padStart(3, '0')}`,
+    source,
+    id: question.id || `${source}-${String(index + 1).padStart(3, '0')}`,
   };
 }
 
-function validateQuestion(question, index, existingIds, incomingIds) {
+function validateQuestion(question, index, existingIds, incomingIds, source) {
   const label = question?.id ? `${question.id}` : `incoming question ${index + 1}`;
   const errors = [];
 
@@ -30,8 +29,8 @@ function validateQuestion(question, index, existingIds, incomingIds) {
     incomingIds.add(question.id);
   }
 
-  if (question?.source !== SOURCE) {
-    errors.push(`${label}: source must be ${SOURCE}`);
+  if (question?.source !== source) {
+    errors.push(`${label}: source must be ${source}`);
   }
 
   if (!VALID_MODULES.has(question?.module)) {
@@ -81,9 +80,16 @@ if (!Array.isArray(parsed)) {
 
 const existingIds = new Set(questionBank.map((question) => question.id));
 const incomingIds = new Set();
-const incomingQuestions = parsed.map(normalizeQuestion);
+const sources = new Set(parsed.map((question) => question.source).filter(isNonEmptyString));
+
+if (sources.size !== 1) {
+  throw new Error('Input questions must all use the same non-empty source.');
+}
+
+const sourceName = [...sources][0];
+const incomingQuestions = parsed.map((question, index) => normalizeQuestion(question, index, sourceName));
 const errors = incomingQuestions.flatMap((question, index) =>
-  validateQuestion(question, index, existingIds, incomingIds)
+  validateQuestion(question, index, existingIds, incomingIds, sourceName)
 );
 
 if (errors.length > 0) {
@@ -107,4 +113,4 @@ if (updated === source) {
 }
 
 await writeFile(QUESTIONS_FILE, updated);
-console.log(`Appended ${incomingQuestions.length} ${SOURCE} questions.`);
+console.log(`Appended ${incomingQuestions.length} ${sourceName} questions.`);
