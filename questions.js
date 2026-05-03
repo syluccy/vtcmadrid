@@ -8663,5 +8663,447 @@ export const questionBank = [
       }
     ],
     "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test4-001",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué significa la expresión \"estar en las nubes\"?",
+    "hu": "Mit jelent az „estar en las nubes” („a felhőkben járni”, elkalandozottnak lenni) kifejezés?",
+    "answers": [
+      {
+        "original": "Estar en un sitio alto.",
+        "hu": "Magas helyen lenni."
+      },
+      {
+        "original": "Estar soñando literalmente.",
+        "hu": "Szó szerint álmodni."
+      },
+      {
+        "original": "Volar en avión.",
+        "hu": "Repülőn utazni."
+      },
+      {
+        "original": "Estar distraído.",
+        "hu": "Szórakozottnak / elkalandozottnak lenni."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test4-002",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "Tener \"mucha labia\" quiere decir:",
+    "hu": "Mit jelent a „tener mucha labia” („jó beszélőkéje van”) kifejezés?",
+    "answers": [
+      {
+        "original": "Hablar con habilidad y persuasión",
+        "hu": "Ügyesen és meggyőzően beszélni"
+      },
+      {
+        "original": "Decir mentiras",
+        "hu": "Hazugságokat mondani"
+      },
+      {
+        "original": "Hablar con torpeza",
+        "hu": "Ügyetlenül beszélni"
+      },
+      {
+        "original": "Ser culto",
+        "hu": "Műveltnek lenni"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test4-006",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué tiempo verbal se usa en \"Mañana iremos al cine\"?",
+    "hu": "Milyen igeidő szerepel ebben a mondatban: „Mañana iremos al cine” („Holnap moziba megyünk”)?",
+    "answers": [
+      {
+        "original": "Condicional",
+        "hu": "Feltételes mód"
+      },
+      {
+        "original": "Futuro",
+        "hu": "Jövő idő"
+      },
+      {
+        "original": "Pasado",
+        "hu": "Múlt idő"
+      },
+      {
+        "original": "Presente",
+        "hu": "Jelen idő"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test4-007",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "Significado de \"esporádico\":",
+    "hu": "Mit jelent az „esporádico” („szórványos, alkalmi”) szó?",
+    "answers": [
+      {
+        "original": "Previsto con antelación.",
+        "hu": "Előre tervezett."
+      },
+      {
+        "original": "Ocasional y sin regularidad.",
+        "hu": "Alkalmi és nem rendszeres."
+      },
+      {
+        "original": "Breve pero constante.",
+        "hu": "Rövid, de állandó."
+      },
+      {
+        "original": "Prolongado y frecuente.",
+        "hu": "Hosszan tartó és gyakori."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test4-008",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué significa 'Quien avisa no es traidor'?",
+    "hu": "Mit jelent a „Quien avisa no es traidor” („aki előre szól, nem áruló”) mondás?",
+    "answers": [
+      {
+        "original": "Ser un espía",
+        "hu": "Kémnek lenni"
+      },
+      {
+        "original": "Ser desleal",
+        "hu": "Hűtlennek / lojálisnak nem lenni"
+      },
+      {
+        "original": "Contar un secreto",
+        "hu": "Elárulni egy titkot"
+      },
+      {
+        "original": "Advertir a alguien antes de actuar",
+        "hu": "Figyelmeztetni valakit cselekvés előtt"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test4-009",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué tipo de palabra es 'rápidamente'?",
+    "hu": "Milyen szófajú a „rápidamente” („gyorsan”) szó?",
+    "answers": [
+      {
+        "original": "Verbo",
+        "hu": "Ige"
+      },
+      {
+        "original": "Sustantivo",
+        "hu": "Főnév"
+      },
+      {
+        "original": "Adverbio",
+        "hu": "Határozószó"
+      },
+      {
+        "original": "Adjetivo",
+        "hu": "Melléknév"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test4-010",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué función cumple la palabra subrayada en: 'Pedro llegó *temprano* a casa'?",
+    "hu": "Milyen szerepet tölt be az aláhúzott szó ebben a mondatban: „Pedro llegó temprano a casa” („Pedro korán hazaért”)?",
+    "answers": [
+      {
+        "original": "Complemento directo",
+        "hu": "Tárgy"
+      },
+      {
+        "original": "Complemento circunstancial de tiempo",
+        "hu": "Időhatározó"
+      },
+      {
+        "original": "Verbo",
+        "hu": "Ige"
+      },
+      {
+        "original": "Sujeto",
+        "hu": "Alany"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test4-011",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué palabra es un sinónimo de \"feliz\"?",
+    "hu": "Melyik szó a „feliz” („boldog”) szinonimája?",
+    "answers": [
+      {
+        "original": "Apagado",
+        "hu": "Lehangolt / tompa"
+      },
+      {
+        "original": "Alegre",
+        "hu": "Vidám"
+      },
+      {
+        "original": "Triste",
+        "hu": "Szomorú"
+      },
+      {
+        "original": "Amargo",
+        "hu": "Keserű"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test4-012",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué palabra tiene un significado similar a 'valiente'?",
+    "hu": "Melyik szó jelentése hasonló a „valiente” („bátor”) szóhoz?",
+    "answers": [
+      {
+        "original": "Miedoso.",
+        "hu": "Félénk."
+      },
+      {
+        "original": "Asustado.",
+        "hu": "Ijedt."
+      },
+      {
+        "original": "Intrépido.",
+        "hu": "Rettenthetetlen."
+      },
+      {
+        "original": "Cobarde.",
+        "hu": "Gyáva."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test4-013",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "Seleccione la forma verbal que corresponde al pretérito perfecto simple de indicativo.",
+    "hu": "Válaszd ki azt az igealakot, amely a kijelentő mód egyszerű befejezett múltjához tartozik.",
+    "answers": [
+      {
+        "original": "Ella escribió una carta a su amiga.",
+        "hu": "Ő levelet írt a barátnőjének."
+      },
+      {
+        "original": "Ella escribía una carta a su amiga.",
+        "hu": "Ő levelet írogatott / éppen levelet írt a barátnőjének."
+      },
+      {
+        "original": "Ella ha escrito una carta a su amiga.",
+        "hu": "Ő írt / megírt egy levelet a barátnőjének."
+      },
+      {
+        "original": "Ella escribirá una carta a su amiga.",
+        "hu": "Ő levelet fog írni a barátnőjének."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test4-014",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué signo de puntuación se usa para introducir una cita?",
+    "hu": "Melyik írásjel használható idézet bevezetésére?",
+    "answers": [
+      {
+        "original": "Paréntesis",
+        "hu": "Zárójel"
+      },
+      {
+        "original": "Punto",
+        "hu": "Pont"
+      },
+      {
+        "original": "Punto y coma",
+        "hu": "Pontosvessző"
+      },
+      {
+        "original": "Comillas",
+        "hu": "Idézőjel"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test4-015",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué palabra tiene un significado contrario a \"nuevo\"?",
+    "hu": "Melyik szó jelentése ellentétes a „nuevo” („új”) szóval?",
+    "answers": [
+      {
+        "original": "Moderno",
+        "hu": "Modern"
+      },
+      {
+        "original": "Reciente",
+        "hu": "Friss / nemrég történt"
+      },
+      {
+        "original": "Actual",
+        "hu": "Jelenlegi"
+      },
+      {
+        "original": "Viejo",
+        "hu": "Régi / öreg"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test4-016",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué es un campo semántico?",
+    "hu": "Mi az a szemantikai mező?",
+    "answers": [
+      {
+        "original": "Un sinónimo",
+        "hu": "Egy szinonima"
+      },
+      {
+        "original": "Un sustantivo colectivo",
+        "hu": "Egy gyűjtőnév"
+      },
+      {
+        "original": "Un prefijo",
+        "hu": "Egy előtag"
+      },
+      {
+        "original": "Un grupo de palabras relacionadas por significado",
+        "hu": "Jelentésük alapján összefüggő szavak csoportja"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test4-017",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "Complete correctamente la oración considerando la concordancia gramatical: \"Los pasajeros ___ el cinturón de seguridad ___ durante todo el trayecto.\"",
+    "hu": "Egészítsd ki helyesen a mondatot a nyelvtani egyeztetés alapján: „Az utasoknak az egész út alatt ___ a biztonsági övet ___.”",
+    "answers": [
+      {
+        "original": "Deben usar, correctamente abrochado",
+        "hu": "használniuk kell, megfelelően becsatolva"
+      },
+      {
+        "original": "Deben usar, correctamente abrochados",
+        "hu": "használniuk kell, megfelelően becsatolva"
+      },
+      {
+        "original": "Debe usa, correctamente abrochado",
+        "hu": "kell használ, megfelelően becsatolva"
+      },
+      {
+        "original": "Debe usar, correctamente abrochado",
+        "hu": "használnia kell, megfelelően becsatolva"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test4-018",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Cuál de las siguientes palabras significa lo mismo que \"restricción\"?",
+    "hu": "Az alábbi szavak közül melyik jelenti ugyanazt, mint a „restricción” („korlátozás”)?",
+    "answers": [
+      {
+        "original": "Permiso",
+        "hu": "Engedély"
+      },
+      {
+        "original": "Limitación",
+        "hu": "Korlátozás"
+      },
+      {
+        "original": "Licencia",
+        "hu": "Engedély / jogosítvány"
+      },
+      {
+        "original": "Apertura",
+        "hu": "Nyitás / nyitottság"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test4-019",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué refrán significa que es mejor hacer las cosas con calma?",
+    "hu": "Melyik közmondás jelenti azt, hogy jobb nyugodtan, kapkodás nélkül végezni a dolgokat?",
+    "answers": [
+      {
+        "original": "Vísteme despacio que tengo prisa.",
+        "hu": "Lassan öltöztess, mert sietek."
+      },
+      {
+        "original": "No por mucho madrugar amanece más temprano.",
+        "hu": "Attól, hogy korábban kelsz, nem virrad hamarabb."
+      },
+      {
+        "original": "Cría cuervos y te sacarán los ojos.",
+        "hu": "Nevelj hollókat, és kivájják a szemed."
+      },
+      {
+        "original": "Cuando el río suena, agua lleva.",
+        "hu": "Ha zúg a folyó, vizet hord."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test4-020",
+    "source": "proformatrans-modulo1-test4",
+    "module": "I",
+    "q": "¿Qué es prosa poética?",
+    "hu": "Mi a költői próza?",
+    "answers": [
+      {
+        "original": "Ensayo con estructura métrica",
+        "hu": "Metrikus szerkezetű esszé"
+      },
+      {
+        "original": "Texto narrativo con rima",
+        "hu": "Rímes elbeszélő szöveg"
+      },
+      {
+        "original": "Poema sin significado",
+        "hu": "Jelentés nélküli vers"
+      },
+      {
+        "original": "Texto con estilo poético sin verso",
+        "hu": "Költői stílusú, de nem versben írt szöveg"
+      }
+    ],
+    "correctIndex": 3
   }
 ];
