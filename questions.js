@@ -37,7 +37,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La polisemia de “banco” permite que signifique:",
-    "hu": "A „banco” szó többjelentésűsége lehetővé teszi, hogy ezt jelentse:",
+    "hu": "A „banco” („pad” vagy „bank”) szó többjelentésűsége lehetővé teszi, hogy ezt jelentse:",
     "answers": [
       {
         "original": "\"Silla o sofá, indistintamente\".",
@@ -63,7 +63,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "El antónimo de “escaso” es:",
-    "hu": "Az „escaso” ellentéte:",
+    "hu": "Az „escaso” („kevés, szűkös”) ellentéte:",
     "answers": [
       {
         "original": "Reducido.",
@@ -89,7 +89,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "El antónimo de “ordenado” es:",
-    "hu": "Az „ordenado” ellentéte:",
+    "hu": "Az „ordenado” („rendezett”) ellentéte:",
     "answers": [
       {
         "original": "Organizado.",
@@ -167,7 +167,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "El antónimo de “suave” es:",
-    "hu": "A „suave” ellentéte:",
+    "hu": "A „suave” („puha, finom”) ellentéte:",
     "answers": [
       {
         "original": "Aterciopelado.",
@@ -193,7 +193,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La palabra “esporádico” en la frase “hubo cortes esporádicos de luz” significa:",
-    "hu": "Az „esporádico” szó a „szórványos áramkimaradások voltak” mondatban ezt jelenti:",
+    "hu": "Az „esporádico” („szórványos”) szó a „szórványos áramkimaradások voltak” mondatban ezt jelenti:",
     "answers": [
       {
         "original": "Prolongado y frecuente.",
@@ -219,7 +219,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La palabra “contumaz” en “infractor contumaz” significa:",
-    "hu": "A „contumaz” szó a „visszaeső jogsértő” kifejezésben ezt jelenti:",
+    "hu": "A „contumaz” („makacs, ismétlődő/visszaeső”) szó a „visszaeső jogsértő” kifejezésben ezt jelenti:",
     "answers": [
       {
         "original": "Reincidente y obstinado.",
@@ -271,7 +271,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La expresión “aforo completo” indica:",
-    "hu": "Az „aforo completo” kifejezés azt jelenti:",
+    "hu": "Az „aforo completo” („megtelt, nincs több férőhely”) kifejezés azt jelenti:",
     "answers": [
       {
         "original": "Capacidad máxima ocupada.",
@@ -739,7 +739,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "II",
     "q": "El denominado \"Campo del Moro\", ¿junto a qué lugar de interés turístico está situado?",
-    "hu": "Az úgynevezett „Campo del Moro” melyik turisztikai látványosság mellett található?",
+    "hu": "Az úgynevezett „Campo del Moro” park melyik turisztikai látványosság mellett található?",
     "answers": [
       {
         "original": "Junto al Parque del Retiro.",
@@ -1701,7 +1701,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "En la expresión “La jornada fue extenuante”, “extenuante” significa:",
-    "hu": "A „La jornada fue extenuante” kifejezésben az „extenuante” jelentése:",
+    "hu": "A „La jornada fue extenuante” („A nap kimerítő volt”) kifejezésben az „extenuante” („kimerítő”) jelentése:",
     "answers": [
       {
         "original": "Muy rápida.",
@@ -1727,7 +1727,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "¿Cuál es el antónimo de “ exabrupto”?",
-    "hu": "Mi az „exabrupto” ellentéte?",
+    "hu": "Mi az „exabrupto” („durva kirohanás, tapintatlan megjegyzés”) ellentéte?",
     "answers": [
       {
         "original": "Grosería.",
@@ -1805,7 +1805,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "En la expresión “La crítica fue acerba”, “acerba” significa:",
-    "hu": "A „La crítica fue acerba” kifejezésben az „acerba” jelentése:",
+    "hu": "A „La crítica fue acerba” („A kritika éles/keserű volt”) kifejezésben az „acerba” („éles, keserű”) jelentése:",
     "answers": [
       {
         "original": "Confusa y tibia.",
@@ -1831,7 +1831,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "¿Qué tipo de palabra es autosuficiente?",
-    "hu": "Milyen típusú szó az „autosuficiente”?",
+    "hu": "Milyen típusú szó az „autosuficiente” („önellátó, önmagában elegendő”)?",
     "answers": [
       {
         "original": "Simple.",
@@ -3235,7 +3235,7 @@ export const questionBank = [
     "source": "Ötödik 30-as blokk",
     "module": "I",
     "q": "Elija la respuesta correcta, entre las siguientes, respecto a esta afirmación: “Estar como una regadera.”",
-    "hu": "Válassza ki a helyes választ az alábbiak közül ehhez a kifejezéshez: „Estar como una regadera.”",
+    "hu": "Válassza ki a helyes választ az alábbiak közül ehhez a kifejezéshez: „Estar como una regadera” („nem teljesen normálisnak lenni / bolondosan viselkedni”).",
     "answers": [
       {
         "original": "Estar loco o actuar de manera excéntrica.",
@@ -3339,7 +3339,7 @@ export const questionBank = [
     "source": "Ötödik 30-as blokk",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a \"chasis\"?",
-    "hu": "Az alábbi meghatározások közül melyik felel meg a „chasis” szónak?",
+    "hu": "Az alábbi meghatározások közül melyik felel meg a „chasis” („alváz”) szónak?",
     "answers": [
       {
         "original": "Estructura principal de un vehículo que soporta todos los componentes.",
@@ -3365,7 +3365,7 @@ export const questionBank = [
     "source": "Ötödik 30-as blokk",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a \"ajedrez\"?",
-    "hu": "Az alábbi meghatározások közül melyik felel meg az „ajedrez” szónak?",
+    "hu": "Az alábbi meghatározások közül melyik felel meg az „ajedrez” („sakk”) szónak?",
     "answers": [
       {
         "original": "Juego de mesa en el que dos jugadores mueven piezas en un tablero de 64 casillas.",
@@ -4795,7 +4795,7 @@ export const questionBank = [
     "source": "ejemplo-prueba-iv.pdf",
     "module": "I",
     "q": "La palabra “laconismo” alude a:",
-    "hu": "Mit jelent a „laconismo”?",
+    "hu": "Mit jelent a „laconismo” („szűkszavúság, tömör kifejezésmód”)?",
     "answers": [
       {
         "original": "Hablar con ambiguedad.",
@@ -4873,7 +4873,7 @@ export const questionBank = [
     "source": "Hetedik 30-as blokk",
     "module": "I",
     "q": "Seleccione el antónimo más adecuado de “preterir” :",
-    "hu": "Válaszd ki a „preterir” legmegfelelőbb ellentétét:",
+    "hu": "Válaszd ki a „preterir” („mellőzni, kihagyni”) legmegfelelőbb ellentétét:",
     "answers": [
       {
         "original": "Descartar",
@@ -5237,7 +5237,7 @@ export const questionBank = [
     "source": "Hetedik 30-as blokk",
     "module": "II",
     "q": "¿Qué famoso museo de arte, y dónde está situado, alberga obras maestras como \"Las Meninas\" de Velázquez y \"La maja desnuda\" de Goya?",
-    "hu": "Melyik híres művészeti múzeum, és hol található, ahol Velázquez „Las Meninas” és Goya „La maja desnuda” című remekművei is megtalálhatók?",
+    "hu": "Melyik híres művészeti múzeum, és hol található, ahol Velázquez „Las Meninas” („Az udvarhölgyek”) és Goya „La maja desnuda” („A meztelen maja”) című remekművei is megtalálhatók?",
     "answers": [
       {
         "original": "Museo Reina Sofía, en la calle de Santa Isabel, distrito Centro.",
@@ -6069,7 +6069,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a la palabra “caja”?",
-    "hu": "A következő meghatározások közül melyik felel meg a „caja” szónak?",
+    "hu": "A következő meghatározások közül melyik felel meg a „caja” („doboz, láda vagy pénztár”) szónak?",
     "answers": [
       {
         "original": "Musgo que se cría en la corteza de algunos árboles.",
@@ -6095,7 +6095,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a la palabra “cocina”?",
-    "hu": "A következő meghatározások közül melyik felel meg a \"cocina\" szónak?",
+    "hu": "A következő meghatározások közül melyik felel meg a „cocina” („konyha”) szónak?",
     "answers": [
       {
         "original": "Acción de comer a una hora determinada del día.",
@@ -6121,7 +6121,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Qué significa el refrán “El que mucho abarca, poco aprieta”?",
-    "hu": "Mit jelent a „El que mucho abarca, poco aprieta” közmondás?",
+    "hu": "Mit jelent az „El que mucho abarca, poco aprieta” („Aki túl sokat markol, keveset fog”) közmondás?",
     "answers": [
       {
         "original": "Que es bueno hacer mucho deporte.",
@@ -6303,7 +6303,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "Lo contrario de abrir es",
-    "hu": "Az 'abrir' ellentéte",
+    "hu": "Az „abrir” („kinyitni”) ellentéte",
     "answers": [
       {
         "original": "Elevar.",
@@ -6329,7 +6329,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "Lo contrario de lejos es:",
-    "hu": "A 'lejos' ellentéte:",
+    "hu": "A „lejos” („messze”) ellentéte:",
     "answers": [
       {
         "original": "Alejado.",
@@ -6355,7 +6355,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "Lo contrario de fácil es",
-    "hu": "A 'fácil' ellentéte az",
+    "hu": "A „fácil” („könnyű”) ellentéte az",
     "answers": [
       {
         "original": "Correcto.",
@@ -6407,7 +6407,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Qué palabra significa lo mismo que acabar?",
-    "hu": "Melyik szó jelent ugyanazt, mint az 'acabar'?",
+    "hu": "Melyik szó jelent ugyanazt, mint az „acabar” („befejezni”)?",
     "answers": [
       {
         "original": "Disminuir.",
@@ -6511,7 +6511,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Qué significa el refrán “De tal palo tal astilla”?",
-    "hu": "Mit jelent a „De tal palo tal astilla” közmondás?",
+    "hu": "Mit jelent a „De tal palo tal astilla” („Amilyen a fa, olyan a forgácsa”) közmondás?",
     "answers": [
       {
         "original": "Los familiares no se parecen entre ellos.",
@@ -7260,4 +7260,498 @@ export const questionBank = [
     ],
     "correctIndex": 0
   },
+  {
+    "id": "proformatrans-test1-001",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Cuál es un ejemplo de oración compuesta?",
+    "hu": "Melyik példa összetett mondatra?",
+    "answers": [
+      {
+        "original": "Vine y te llamé",
+        "hu": "Jöttem és felhívtalak."
+      },
+      {
+        "original": "Pedro come",
+        "hu": "Pedro eszik."
+      },
+      {
+        "original": "Llueve mucho",
+        "hu": "Nagyon esik az eső."
+      },
+      {
+        "original": "Salieron",
+        "hu": "Elmentek."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-test1-002",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Quién escribió El Quijote?",
+    "hu": "Ki írta a Don Quijotét?",
+    "answers": [
+      {
+        "original": "Miguel de Cervantes",
+        "hu": "Miguel de Cervantes"
+      },
+      {
+        "original": "Gabriel García Márquez",
+        "hu": "Gabriel García Márquez"
+      },
+      {
+        "original": "Lope de Vega",
+        "hu": "Lope de Vega"
+      },
+      {
+        "original": "Jorge Luis Borges",
+        "hu": "Jorge Luis Borges"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-test1-003",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "Elija la respuesta que sea más correcta frente a esta afirmación, \"Estar entre la espada y la pared.\"",
+    "hu": "Válaszd ki a leghelyesebb választ erre a kifejezésre: „Két tűz közé kerülni / szorult helyzetben lenni.”",
+    "answers": [
+      {
+        "original": "Tener que tomar una decisión difícil.",
+        "hu": "Nehéz döntést kell meghozni."
+      },
+      {
+        "original": "Estar en un combate.",
+        "hu": "Harcban lenni."
+      },
+      {
+        "original": "Estar en una pared.",
+        "hu": "Egy falon lenni."
+      },
+      {
+        "original": "Tener que ir a dos sitios.",
+        "hu": "Két helyre kell menni."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-test1-004",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué palabra no guarda relación con el resto?",
+    "hu": "Melyik szó nem kapcsolódik a többihez?",
+    "answers": [
+      {
+        "original": "Oriundo.",
+        "hu": "Származó / odavalósi."
+      },
+      {
+        "original": "Atávico.",
+        "hu": "Atavisztikus / ősi."
+      },
+      {
+        "original": "Heredado.",
+        "hu": "Örökölt."
+      },
+      {
+        "original": "Ancestral.",
+        "hu": "Ősi."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-test1-005",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué tipo de palabra es \"rápido\" en la oración \"Corre rápido\"?",
+    "hu": "Milyen szófaj a „rápido” a „Corre rápido” mondatban?",
+    "answers": [
+      {
+        "original": "Adverbio",
+        "hu": "Határozószó"
+      },
+      {
+        "original": "Adjetivo",
+        "hu": "Melléknév"
+      },
+      {
+        "original": "Sustantivo",
+        "hu": "Főnév"
+      },
+      {
+        "original": "Verbo",
+        "hu": "Ige"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-test1-006",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "Mi amigo Juan y Pedro, que es el padre de su mujer, ______ aficionados al baloncesto. Pedro le acompaña a disfrutar de los partidos del Estudiantes los domingos porque es el único día que no ______.",
+    "hu": "A barátom, Juan és Pedro, aki a felesége apja, ______ a kosárlabda rajongói. Pedro elkíséri őt vasárnaponként az Estudiantes meccseire, mert ez az egyetlen nap, amikor nem ______.",
+    "answers": [
+      {
+        "original": "Son / trabaja",
+        "hu": "Vannak / dolgozik"
+      },
+      {
+        "original": "Es / trabaja",
+        "hu": "Van / dolgozik"
+      },
+      {
+        "original": "Son / trabajan",
+        "hu": "Vannak / dolgoznak"
+      },
+      {
+        "original": "Es / trabajan",
+        "hu": "Van / dolgoznak"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-test1-007",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Cuál de estas palabras es un adverbio?",
+    "hu": "Az alábbi szavak közül melyik határozószó?",
+    "answers": [
+      {
+        "original": "Azul",
+        "hu": "Kék"
+      },
+      {
+        "original": "Comer",
+        "hu": "Enni"
+      },
+      {
+        "original": "Rápidamente",
+        "hu": "Gyorsan"
+      },
+      {
+        "original": "Camión",
+        "hu": "Teherautó"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-test1-008",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué gas respiramos del aire?",
+    "hu": "Melyik gázt lélegezzük be a levegőből?",
+    "answers": [
+      {
+        "original": "Helio",
+        "hu": "Hélium"
+      },
+      {
+        "original": "Oxígeno",
+        "hu": "Oxigén"
+      },
+      {
+        "original": "Dióxido de carbono",
+        "hu": "Szén-dioxid"
+      },
+      {
+        "original": "Hidrógeno",
+        "hu": "Hidrogén"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-test1-010",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué oración es gramaticalmente correcta y expresa una acción en desarrollo?",
+    "hu": "Melyik mondat nyelvtanilag helyes, és fejez ki folyamatban lévő cselekvést?",
+    "answers": [
+      {
+        "original": "Nosotros estamos cocinado la cena para toda la familia esta noche.",
+        "hu": "Mi főzve vagyunk a vacsorát az egész családnak ma este."
+      },
+      {
+        "original": "Nosotros cocinado estamos la cena para toda la familia esta noche.",
+        "hu": "Mi főzve vagyunk a vacsorát az egész családnak ma este."
+      },
+      {
+        "original": "Nosotros estamos cocinando la cena para toda la familia esta noche.",
+        "hu": "Ma este vacsorát főzünk az egész családnak."
+      },
+      {
+        "original": "Nosotros ser cocinando la cena para toda la familia esta noche.",
+        "hu": "Mi lenni főzve a vacsorát az egész családnak ma este."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-test1-011",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "Jaime: ¿Sabes quién ________ esa joven vestida de blanco que estaba con Héctor? Felipe: No tengo ni idea, ________ su hermana, porque físicamente se parecían muchísimo.",
+    "hu": "Jaime: Tudod, ki ________ az a fehérbe öltözött fiatal nő, aki Héctorral volt? Felipe: Fogalmam sincs, ________ a nővére/húga, mert külsőre nagyon hasonlítottak.",
+    "answers": [
+      {
+        "original": "Era / sería",
+        "hu": "Volt / lehetett volna"
+      },
+      {
+        "original": "Fue / sería",
+        "hu": "Volt / lehetett volna"
+      },
+      {
+        "original": "Era / serán",
+        "hu": "Volt / lesznek"
+      },
+      {
+        "original": "Fue / será",
+        "hu": "Volt / lesz"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-test1-012",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué tipo de oración es: 'Ven aquí ahora mismo.'?",
+    "hu": "Milyen típusú mondat ez: „Gyere ide most azonnal.”?",
+    "answers": [
+      {
+        "original": "Interrogativa",
+        "hu": "Kérdő"
+      },
+      {
+        "original": "Imperativa",
+        "hu": "Felszólító"
+      },
+      {
+        "original": "Enunciativa",
+        "hu": "Kijelentő"
+      },
+      {
+        "original": "Exclamativa",
+        "hu": "Felkiáltó"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-test1-013",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué estructura presenta un texto argumentativo clásico?",
+    "hu": "Milyen szerkezete van egy klasszikus érvelő szövegnek?",
+    "answers": [
+      {
+        "original": "Pregunta, respuesta",
+        "hu": "Kérdés, válasz"
+      },
+      {
+        "original": "Introducción, tesis, argumentos, conclusión",
+        "hu": "Bevezetés, tézis, érvek, következtetés"
+      },
+      {
+        "original": "Título, imágenes, ejemplos",
+        "hu": "Cím, képek, példák"
+      },
+      {
+        "original": "Inicio, nudo, desenlace",
+        "hu": "Bevezetés, bonyodalom, lezárás"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-test1-014",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Cuál de las siguientes definiciones corresponde a la palabra \"señal\"?",
+    "hu": "Az alábbi meghatározások közül melyik felel meg a „señal” szónak?",
+    "answers": [
+      {
+        "original": "Superficie reflectante para mejorar la visibilidad",
+        "hu": "Fényvisszaverő felület a láthatóság javítására"
+      },
+      {
+        "original": "Indicación visual o acústica que regula el tráfico",
+        "hu": "Vizuális vagy hangjelzés, amely szabályozza a forgalmat"
+      },
+      {
+        "original": "Mecanismo que permite el encendido",
+        "hu": "Mechanizmus, amely lehetővé teszi a bekapcsolást"
+      },
+      {
+        "original": "Objeto decorativo utilizado en interiores",
+        "hu": "Beltérben használt dísztárgy"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-test1-015",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué palabra tiene un significado similar a 'amable'?",
+    "hu": "Melyik szó jelentése hasonló az „amable” szóhoz?",
+    "answers": [
+      {
+        "original": "Rudo",
+        "hu": "Durva"
+      },
+      {
+        "original": "Cortés",
+        "hu": "Udvarias"
+      },
+      {
+        "original": "Honesto",
+        "hu": "Őszinte"
+      },
+      {
+        "original": "Noble",
+        "hu": "Nemes"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-test1-016",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Cuál de las siguientes afirmaciones es una falacia?",
+    "hu": "Az alábbi állítások közül melyik téves következtetés?",
+    "answers": [
+      {
+        "original": "El agua hierve a 100°C",
+        "hu": "A víz 100°C-on forr."
+      },
+      {
+        "original": "Todos los humanos son mortales",
+        "hu": "Minden ember halandó."
+      },
+      {
+        "original": "Si llueve, me mojo",
+        "hu": "Ha esik, megázom."
+      },
+      {
+        "original": "Desde que uso esta pulsera me va mejor en el trabajo",
+        "hu": "Amióta ezt a karkötőt használom, jobban megy a munkám."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-test1-017",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "Elige la respuesta correcta: Hoy es mi cumpleaños, mi madre me despertó, desayuné, de camino al cole me encontré con Benito. ¿Quién me felicitó primero?",
+    "hu": "Válaszd ki a helyes választ: Ma van a születésnapom, anyám felébresztett, megreggeliztem, az iskolába menet találkoztam Benitóval. Ki köszöntött fel először?",
+    "answers": [
+      {
+        "original": "Benito",
+        "hu": "Benito"
+      },
+      {
+        "original": "Mis amigos en el colegio",
+        "hu": "A barátaim az iskolában"
+      },
+      {
+        "original": "Mi madre",
+        "hu": "Anyám"
+      },
+      {
+        "original": "Mi padre",
+        "hu": "Apám"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-test1-018",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Cuál es la función de un verbo?",
+    "hu": "Mi az ige funkciója?",
+    "answers": [
+      {
+        "original": "Describir al sustantivo",
+        "hu": "A főnév leírása"
+      },
+      {
+        "original": "Nombrar personas, lugares o cosas",
+        "hu": "Személyek, helyek vagy dolgok megnevezése"
+      },
+      {
+        "original": "Indicar acciones",
+        "hu": "Cselekvések jelölése"
+      },
+      {
+        "original": "Conectar oraciones",
+        "hu": "Mondatok összekapcsolása"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-test1-019",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "...es a cocina como chef es a...",
+    "hu": "… úgy viszonyul a konyhához, ahogy a séf a …",
+    "answers": [
+      {
+        "original": "Plato – Sartén.",
+        "hu": "Tányér – serpenyő."
+      },
+      {
+        "original": "Restaurante – Receta.",
+        "hu": "Étterem – recept."
+      },
+      {
+        "original": "Comida – Ingrediente.",
+        "hu": "Étel – hozzávaló."
+      },
+      {
+        "original": "Sabor – Fuego.",
+        "hu": "Íz – tűz."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-test1-020",
+    "source": "proformatrans-test1",
+    "module": "I",
+    "q": "¿Qué tipo de palabra es \"grande\" en la oración \"Ese coche es grande\"?",
+    "hu": "Milyen szófaj a „grande” az „Ese coche es grande” mondatban?",
+    "answers": [
+      {
+        "original": "Verbo",
+        "hu": "Ige"
+      },
+      {
+        "original": "Pronombre",
+        "hu": "Névmás"
+      },
+      {
+        "original": "Adjetivo",
+        "hu": "Melléknév"
+      },
+      {
+        "original": "Sustantivo",
+        "hu": "Főnév"
+      }
+    ],
+    "correctIndex": 2
+  }
 ];
