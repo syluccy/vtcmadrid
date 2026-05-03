@@ -8195,5 +8195,473 @@ export const questionBank = [
       }
     ],
     "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test3-001",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Cuál de las siguientes definiciones corresponde a la palabra \"peatón\"?",
+    "hu": "Az alábbi meghatározások közül melyik felel meg a „peatón” („gyalogos”) szónak?",
+    "answers": [
+      {
+        "original": "Componente esencial para la dirección",
+        "hu": "A kormányzáshoz nélkülözhetetlen alkatrész"
+      },
+      {
+        "original": "Sistema de frenos de un vehículo",
+        "hu": "Egy jármű fékrendszere"
+      },
+      {
+        "original": "Persona que transita a pie por una vía pública",
+        "hu": "Olyan személy, aki gyalog közlekedik közúton vagy közterületen"
+      },
+      {
+        "original": "Elemento que proporciona tracción",
+        "hu": "Tapadást biztosító elem"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test3-003",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "Marque el tiempo verbal subjuntivo:",
+    "hu": "Jelöld meg a kötőmódú igealakot:",
+    "answers": [
+      {
+        "original": "Le llevaré a la plaza de Sol.",
+        "hu": "Elviszem a Sol térre."
+      },
+      {
+        "original": "Ayer llovió.",
+        "hu": "Tegnap esett az eső."
+      },
+      {
+        "original": "Si tuviera mas tiempo.",
+        "hu": "Ha több időm lenne."
+      },
+      {
+        "original": "Nosotros caminemos.",
+        "hu": "Menjünk / sétáljunk mi."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test3-004",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Cuál es el sujeto en la oración: 'El gato comió el pescado ayer.'",
+    "hu": "Mi az alany ebben a mondatban: „A macska tegnap megette a halat.”?",
+    "answers": [
+      {
+        "original": "El gato",
+        "hu": "A macska"
+      },
+      {
+        "original": "ayer",
+        "hu": "tegnap"
+      },
+      {
+        "original": "comió",
+        "hu": "megette"
+      },
+      {
+        "original": "el pescado",
+        "hu": "a halat"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test3-005",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Cuál es la forma correcta de expresar el destinatario de la carta?",
+    "hu": "Melyik a helyes módja annak, hogy kifejezzük, kinek szól a levél?",
+    "answers": [
+      {
+        "original": "La carta es para ti y tu familia, con mucho cariño.",
+        "hu": "A levél neked és a családodnak szól, sok szeretettel."
+      },
+      {
+        "original": "La carta va delante ti y tu familia, con amabilidad.",
+        "hu": "A levél előtted és a családod előtt megy, kedvességgel."
+      },
+      {
+        "original": "La carta está mediante ti y tu familia, enviada con afecto.",
+        "hu": "A levél rajtad és a családodon keresztül van, szeretettel küldve."
+      },
+      {
+        "original": "La carta es con ti y tu familia, con mucho afecto.",
+        "hu": "A levél veled és a családoddal van, sok szeretettel."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test3-006",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Cuál de las siguientes palabras significa lo mismo que \"defectuoso\"?",
+    "hu": "Az alábbi szavak közül melyik jelentése ugyanaz, mint a „defectuoso” („hibás, tökéletlen”)?",
+    "answers": [
+      {
+        "original": "Impecable",
+        "hu": "Kifogástalan"
+      },
+      {
+        "original": "Perfecto",
+        "hu": "Tökéletes"
+      },
+      {
+        "original": "Preciso",
+        "hu": "Pontos"
+      },
+      {
+        "original": "Imperfecto",
+        "hu": "Tökéletlen"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test3-007",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué tipo de oración es \"¡Qué sorpresa verte aquí!\"?",
+    "hu": "Milyen típusú mondat ez: „Micsoda meglepetés itt látni téged!”?",
+    "answers": [
+      {
+        "original": "Imperativa",
+        "hu": "Felszólító"
+      },
+      {
+        "original": "Exclamativa",
+        "hu": "Felkiáltó"
+      },
+      {
+        "original": "Interrogativa",
+        "hu": "Kérdő"
+      },
+      {
+        "original": "Declarativa",
+        "hu": "Kijelentő"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test3-008",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué palabra tiene un significado similar a \"grande\"?",
+    "hu": "Melyik szó jelentése hasonló a „grande” („nagy”) szóhoz?",
+    "answers": [
+      {
+        "original": "Pequeño",
+        "hu": "Kicsi"
+      },
+      {
+        "original": "Enorme",
+        "hu": "Hatalmas"
+      },
+      {
+        "original": "Viejo",
+        "hu": "Öreg / régi"
+      },
+      {
+        "original": "Bajo",
+        "hu": "Alacsony"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test3-009",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué palabra completa mejor la frase? — \"El coche _____ muy rápido.\"",
+    "hu": "Melyik szó egészíti ki legjobban a mondatot? „Az autó nagyon gyorsan _____.”",
+    "answers": [
+      {
+        "original": "Corre",
+        "hu": "megy / fut"
+      },
+      {
+        "original": "Juega",
+        "hu": "játszik"
+      },
+      {
+        "original": "Vuela",
+        "hu": "repül"
+      },
+      {
+        "original": "Comió",
+        "hu": "evett"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test3-010",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué opción muestra comportamiento profesional ante una queja?",
+    "hu": "Melyik opció mutat szakmai/professzionális viselkedést panasz esetén?",
+    "answers": [
+      {
+        "original": "Reírse",
+        "hu": "Nevetni rajta"
+      },
+      {
+        "original": "Ignorar",
+        "hu": "Figyelmen kívül hagyni"
+      },
+      {
+        "original": "Escuchar y ofrecer solución",
+        "hu": "Meghallgatni és megoldást kínálni"
+      },
+      {
+        "original": "Justificar",
+        "hu": "Magyarázkodni / igazolni magát"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test3-011",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué tipo de palabra es \"ellos\"?",
+    "hu": "Milyen szófaj az „ellos” („ők”)?",
+    "answers": [
+      {
+        "original": "Sustantivo",
+        "hu": "Főnév"
+      },
+      {
+        "original": "Adjetivo",
+        "hu": "Melléknév"
+      },
+      {
+        "original": "Pronombre",
+        "hu": "Névmás"
+      },
+      {
+        "original": "Verbo",
+        "hu": "Ige"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test3-012",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Cuál de estos elementos ayuda a ahorrar combustible?",
+    "hu": "Az alábbiak közül melyik segít üzemanyagot megtakarítani?",
+    "answers": [
+      {
+        "original": "Conducir en marchas bajas siempre",
+        "hu": "Mindig alacsony sebességfokozatban vezetni"
+      },
+      {
+        "original": "Acelerar al máximo",
+        "hu": "Maximálisan gyorsítani"
+      },
+      {
+        "original": "Frenar bruscamente",
+        "hu": "Hirtelen fékezni"
+      },
+      {
+        "original": "Conducir a velocidad constante",
+        "hu": "Állandó sebességgel vezetni"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test3-014",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué palabra es un sinónimo de \"amplio\"?",
+    "hu": "Melyik szó a „amplio” („tágas, széles”) szinonimája?",
+    "answers": [
+      {
+        "original": "Pequeño",
+        "hu": "Kicsi"
+      },
+      {
+        "original": "Extenso",
+        "hu": "Kiterjedt / tágas"
+      },
+      {
+        "original": "Corto",
+        "hu": "Rövid"
+      },
+      {
+        "original": "Reducido",
+        "hu": "Csökkentett / szűk"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test3-015",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Cuál es una frase con sujeto implícito?",
+    "hu": "Melyik mondatban van rejtett alany?",
+    "answers": [
+      {
+        "original": "Ella comió pizza",
+        "hu": "Ő pizzát evett"
+      },
+      {
+        "original": "Yo comí pizza",
+        "hu": "Én pizzát ettem"
+      },
+      {
+        "original": "Comí pizza",
+        "hu": "Pizzát ettem"
+      },
+      {
+        "original": "Ustedes comen pizza",
+        "hu": "Önök pizzát esznek"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test3-016",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué tipo de oración es: '¡Qué sorpresa!'?",
+    "hu": "Milyen típusú mondat ez: „Micsoda meglepetés!”?",
+    "answers": [
+      {
+        "original": "Imperativa",
+        "hu": "Felszólító"
+      },
+      {
+        "original": "Enunciativa",
+        "hu": "Kijelentő"
+      },
+      {
+        "original": "Interrogativa",
+        "hu": "Kérdő"
+      },
+      {
+        "original": "Exclamativa",
+        "hu": "Felkiáltó"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test3-017",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "Sol es a día como luna es a:",
+    "hu": "A nap úgy viszonyul a nappalhoz, ahogy a hold a következőhöz:",
+    "answers": [
+      {
+        "original": "Mañana",
+        "hu": "Reggel / holnap"
+      },
+      {
+        "original": "Noche",
+        "hu": "Éjszaka"
+      },
+      {
+        "original": "Tarde",
+        "hu": "Délután / este"
+      },
+      {
+        "original": "Mediodía",
+        "hu": "Dél"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test3-018",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "Elige la opción que contiene un arcaísmo.",
+    "hu": "Válaszd ki azt az opciót, amely archaizmust tartalmaz.",
+    "answers": [
+      {
+        "original": "Computadora",
+        "hu": "Számítógép"
+      },
+      {
+        "original": "Lámpara",
+        "hu": "Lámpa"
+      },
+      {
+        "original": "Teléfono",
+        "hu": "Telefon"
+      },
+      {
+        "original": "Agora",
+        "hu": "Agora / régi alak: most"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test3-019",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "Elija la respuesta que sea correcta de entre las siguientes respecto a esta afirmación \"estar en el séptimo cielo\":",
+    "hu": "Válaszd ki a helyes választ erre a kifejezésre: „estar en el séptimo cielo” („a hetedik mennyországban lenni”):",
+    "answers": [
+      {
+        "original": "Estar muy feliz.",
+        "hu": "Nagyon boldognak lenni."
+      },
+      {
+        "original": "Volar alto.",
+        "hu": "Magasan repülni."
+      },
+      {
+        "original": "Estar en el suelo.",
+        "hu": "A földön lenni."
+      },
+      {
+        "original": "Ser un ángel.",
+        "hu": "Angyalnak lenni."
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test3-020",
+    "source": "proformatrans-modulo1-test3",
+    "module": "I",
+    "q": "¿Qué tipo de palabra es 'correr'?",
+    "hu": "Milyen szófaj a „correr” („futni”)?",
+    "answers": [
+      {
+        "original": "Adverbio",
+        "hu": "Határozószó"
+      },
+      {
+        "original": "Adjetivo",
+        "hu": "Melléknév"
+      },
+      {
+        "original": "Verbo",
+        "hu": "Ige"
+      },
+      {
+        "original": "Sustantivo",
+        "hu": "Főnév"
+      }
+    ],
+    "correctIndex": 2
   }
 ];
