@@ -7,6 +7,15 @@ Resources: https://www.comunidad.madrid/servicios/transporte/pruebas-conductor-v
 
 The primary language is Castellano (ES), but there are Hungarian aids available. During the exam, the translation of the question can be viewed, and after the exam both the question and the answer are translated into Hungarian.
 
+## Question bank
+
+Current total: 298 questions.
+
+- Module I: 87 questions
+- Module II: 71 questions
+- Module III: 69 questions
+- Module IV: 71 questions
+
 ## Adding new questions
 
 New questions should keep the same structure as `questions.js`: Spanish question text in `q`, Hungarian translation in `hu`, four answer options with `original` and `hu`, a `correctIndex`, a `module` value of `I`, `II`, `III`, or `IV`, and a `source`.
