@@ -61,9 +61,16 @@ function validateQuestion(question, index, seenIds) {
 }
 
 const seenIds = new Set();
-const errors = questionBank.flatMap((question, index) =>
-  validateQuestion(question, index, seenIds)
-);
+const errors = [];
+
+for (let index = 0; index < questionBank.length; index += 1) {
+  if (!(index in questionBank)) {
+    errors.push(`questionBank: empty slot at index ${index}`);
+    continue;
+  }
+
+  errors.push(...validateQuestion(questionBank[index], index, seenIds));
+}
 
 const moduleCounts = questionBank.reduce((counts, question) => {
   counts[question.module] = (counts[question.module] ?? 0) + 1;

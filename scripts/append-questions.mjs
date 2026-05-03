@@ -97,8 +97,10 @@ if (incomingQuestions.length === 0) {
 }
 
 const source = await readFile(QUESTIONS_FILE, 'utf8');
-const insertion = `,\n${incomingQuestions.map((question) => `  ${JSON.stringify(question, null, 2).replace(/\n/g, '\n  ')}`).join(',\n')}\n];`;
-const updated = source.replace(/\n\];\s*$/, insertion);
+const appendedQuestions = incomingQuestions
+  .map((question) => `  ${JSON.stringify(question, null, 2).replace(/\n/g, '\n  ')}`)
+  .join(',\n');
+const updated = source.replace(/,?\s*\n\];\s*$/, `,\n${appendedQuestions}\n];`);
 
 if (updated === source) {
   throw new Error('Could not find the questionBank closing bracket.');
