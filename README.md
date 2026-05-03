@@ -23,6 +23,12 @@ Validate the existing bank:
 node scripts/validate-questions.mjs
 ```
 
+Check duplicate candidates before appending:
+
+```bash
+node scripts/find-duplicate-candidates.mjs
+```
+
 Append the prepared Proformatrans records to `questions.js`:
 
 ```bash

@@ -7469,32 +7469,6 @@ export const questionBank = [
     "correctIndex": 1
   },
   {
-    "id": "proformatrans-test1-009",
-    "source": "proformatrans-test1",
-    "module": "I",
-    "q": "El antónimo de \"ordenado\" es:",
-    "hu": "Az „ordenado” ellentéte:",
-    "answers": [
-      {
-        "original": "Armonioso.",
-        "hu": "Harmonikus."
-      },
-      {
-        "original": "Limpio.",
-        "hu": "Tiszta."
-      },
-      {
-        "original": "Organizado.",
-        "hu": "Szervezett."
-      },
-      {
-        "original": "Caótico.",
-        "hu": "Kaotikus."
-      }
-    ],
-    "correctIndex": 3
-  },
-  {
     "id": "proformatrans-test1-010",
     "source": "proformatrans-test1",
     "module": "I",
