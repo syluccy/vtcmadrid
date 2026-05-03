@@ -7753,5 +7753,447 @@ export const questionBank = [
       }
     ],
     "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test2-001",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Qué signo de puntuación se usa para unir dos ideas relacionadas en una misma oración?",
+    "hu": "Melyik írásjelet használjuk két, egymással összefüggő gondolat összekapcsolására ugyanabban a mondatban?",
+    "answers": [
+      {
+        "original": "Guion",
+        "hu": "Kötőjel"
+      },
+      {
+        "original": "Coma",
+        "hu": "Vessző"
+      },
+      {
+        "original": "Punto y coma",
+        "hu": "Pontosvessző"
+      },
+      {
+        "original": "Punto",
+        "hu": "Pont"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test2-002",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Qué palabra no pertenece al grupo, considerando la función dentro de un sistema informático?",
+    "hu": "Melyik szó nem tartozik a csoportba, ha egy informatikai rendszerben betöltött funkciót nézzük?",
+    "answers": [
+      {
+        "original": "Teclado",
+        "hu": "Billentyűzet"
+      },
+      {
+        "original": "Procesador",
+        "hu": "Processzor"
+      },
+      {
+        "original": "Monitor",
+        "hu": "Monitor"
+      },
+      {
+        "original": "Portátil",
+        "hu": "Laptop / hordozható számítógép"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test2-003",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Cuál de las siguientes definiciones corresponde a la palabra \"maletero\"?",
+    "hu": "Az alábbi meghatározások közül melyik felel meg a „maletero” („csomagtartó”) szónak?",
+    "answers": [
+      {
+        "original": "Compartimento trasero de un vehículo para guardar equipaje",
+        "hu": "A jármű hátsó rekesze csomagok tárolására"
+      },
+      {
+        "original": "Mirar el GPS cada vez que cambie la ruta",
+        "hu": "Megnézni a GPS-t minden alkalommal, amikor változik az útvonal"
+      },
+      {
+        "original": "Dispositivo que activa el sistema de luces del vehículo",
+        "hu": "A jármű világítási rendszerét aktiváló eszköz"
+      },
+      {
+        "original": "Espacio donde se ubican las ruedas del vehículo",
+        "hu": "Az a hely, ahol a jármű kerekei találhatók"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "proformatrans-modulo1-test2-004",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Qué haces si se pincha una rueda?",
+    "hu": "Mit teszel, ha defektet kap az egyik kerék?",
+    "answers": [
+      {
+        "original": "Apagar el motor sin señalizar",
+        "hu": "Leállítani a motort jelzés nélkül"
+      },
+      {
+        "original": "Continuar conduciendo",
+        "hu": "Tovább vezetni"
+      },
+      {
+        "original": "Seguir lentamente",
+        "hu": "Lassan továbbhaladni"
+      },
+      {
+        "original": "Cambiar la rueda o usar kit",
+        "hu": "Kicserélni a kereket vagy javítókészletet használni"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test2-005",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Dónde están los estudiantes?",
+    "hu": "Hol vannak a diákok?",
+    "answers": [
+      {
+        "original": "Los estudiantes están hasta el aula esperando al profesor.",
+        "hu": "A diákok az osztályteremig vannak, és várják a tanárt."
+      },
+      {
+        "original": "Los estudiantes están sin el aula esperando al profesor.",
+        "hu": "A diákok az osztályterem nélkül vannak, és várják a tanárt."
+      },
+      {
+        "original": "Los estudiantes están fuera del aula esperando al profesor.",
+        "hu": "A diákok az osztálytermen kívül vannak, és várják a tanárt."
+      },
+      {
+        "original": "Los estudiantes están dentro el aula esperando al profesor.",
+        "hu": "A diákok az osztályterem belül vannak, és várják a tanárt."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test2-006",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Qué categoría gramatical es 'aunque'?",
+    "hu": "Milyen nyelvtani kategória az „aunque” („bár, habár”)?",
+    "answers": [
+      {
+        "original": "Preposición",
+        "hu": "Elöljárószó"
+      },
+      {
+        "original": "Adjetivo",
+        "hu": "Melléknév"
+      },
+      {
+        "original": "Interjección",
+        "hu": "Indulatszó"
+      },
+      {
+        "original": "Conjunción",
+        "hu": "Kötőszó"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test2-007",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "Complete la frase con la opción correcta: \"El tráfico muy denso hoy.\"",
+    "hu": "Egészítsd ki a mondatot a helyes opcióval: „A forgalom ma nagyon sűrű.”",
+    "answers": [
+      {
+        "original": "estuvimos.",
+        "hu": "voltunk."
+      },
+      {
+        "original": "están.",
+        "hu": "vannak."
+      },
+      {
+        "original": "está.",
+        "hu": "van."
+      },
+      {
+        "original": "estuve.",
+        "hu": "voltam."
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test2-009",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Qué parte del cuerpo usamos para oír?",
+    "hu": "Melyik testrészünket használjuk hallásra?",
+    "answers": [
+      {
+        "original": "Nariz",
+        "hu": "Orr"
+      },
+      {
+        "original": "Oreja",
+        "hu": "Fül"
+      },
+      {
+        "original": "Ojo",
+        "hu": "Szem"
+      },
+      {
+        "original": "Boca",
+        "hu": "Száj"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test2-010",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Cuál es la función de un sustantivo?",
+    "hu": "Mi a főnév funkciója?",
+    "answers": [
+      {
+        "original": "Conectar oraciones",
+        "hu": "Mondatok összekapcsolása"
+      },
+      {
+        "original": "Nombrar personas, lugares o cosas",
+        "hu": "Személyek, helyek vagy dolgok megnevezése"
+      },
+      {
+        "original": "Describir al sustantivo",
+        "hu": "A főnév leírása"
+      },
+      {
+        "original": "Indicar acciones",
+        "hu": "Cselekvések jelölése"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test2-011",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Qué oración está en voz pasiva?",
+    "hu": "Melyik mondat van szenvedő szerkezetben?",
+    "answers": [
+      {
+        "original": "El coche detiene",
+        "hu": "Az autó megállít."
+      },
+      {
+        "original": "El conductor detuvo el coche",
+        "hu": "A vezető megállította az autót."
+      },
+      {
+        "original": "Detienen el coche",
+        "hu": "Megállítják az autót."
+      },
+      {
+        "original": "El coche fue detenido por el conductor",
+        "hu": "Az autót a vezető állította meg."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test2-012",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Cuál es la forma correcta del verbo en esta oración: \"Yo ___ temprano\"?",
+    "hu": "Mi az ige helyes alakja ebben a mondatban: „Én korán ___”?",
+    "answers": [
+      {
+        "original": "llegas",
+        "hu": "érkezel"
+      },
+      {
+        "original": "llegan",
+        "hu": "érkeznek"
+      },
+      {
+        "original": "llego",
+        "hu": "érkezem"
+      },
+      {
+        "original": "llegáis",
+        "hu": "érkeztek"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test2-013",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Cuál es el significado del refrán: 'Más vale pájaro en mano que cien volando'?",
+    "hu": "Mit jelent a közmondás: „Jobb egy madár a kézben, mint száz a levegőben”?",
+    "answers": [
+      {
+        "original": "Mejor tener amigos",
+        "hu": "Jobb, ha vannak barátaink"
+      },
+      {
+        "original": "Los pájaros son importantes",
+        "hu": "A madarak fontosak"
+      },
+      {
+        "original": "Hay que volar",
+        "hu": "Repülni kell"
+      },
+      {
+        "original": "Es mejor lo seguro que lo incierto",
+        "hu": "Jobb a biztos, mint a bizonytalan"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test2-014",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "«¿Puedo abrir la ventana?». ¿Cómo respondes formalmente y de forma educada \"que no\"?",
+    "hu": "„Kinyithatom az ablakot?” Hogyan válaszolsz formálisan és udvariasan nemet?",
+    "answers": [
+      {
+        "original": "Abrir?..., ni lo sueñe!",
+        "hu": "Kinyitni?... arról ne is álmodjon!"
+      },
+      {
+        "original": "Perdone, pero estoy resfriado.",
+        "hu": "Elnézést, de meg vagyok fázva."
+      },
+      {
+        "original": "Disculpe, pero está resuelta.",
+        "hu": "Elnézést, de meg van oldva."
+      },
+      {
+        "original": "Sí, sí, ábrela.",
+        "hu": "Igen, igen, nyisd ki."
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test2-015",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Dónde ______ Marcos? Pues, no sé, ______ en el supermercado.",
+    "hu": "Hol ______ Marcos? Hát, nem tudom, ______ a szupermarketben.",
+    "answers": [
+      {
+        "original": "Estará / estaba",
+        "hu": "lesz / volt"
+      },
+      {
+        "original": "Está / estará",
+        "hu": "van / lehet"
+      },
+      {
+        "original": "Va a estar / estuvo",
+        "hu": "ott lesz / volt"
+      },
+      {
+        "original": "Estaría / será",
+        "hu": "lenne / lesz"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "proformatrans-modulo1-test2-018",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Qué refrán significa que la prisa no es buena consejera?",
+    "hu": "Melyik közmondás jelenti azt, hogy a sietség rossz tanácsadó?",
+    "answers": [
+      {
+        "original": "Perro ladrador, poco mordedor.",
+        "hu": "Amelyik kutya ugat, az nem harap."
+      },
+      {
+        "original": "A quien madruga, Dios lo ayuda.",
+        "hu": "Ki korán kel, aranyat lel."
+      },
+      {
+        "original": "Más vale tarde que nunca.",
+        "hu": "Jobb későn, mint soha."
+      },
+      {
+        "original": "Vísteme despacio que tengo prisa.",
+        "hu": "Lassan öltöztess, mert sietek."
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "proformatrans-modulo1-test2-019",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "¿Cuál definición corresponde a 'acera'?",
+    "hu": "Melyik meghatározás felel meg az „acera” („járda”) szónak?",
+    "answers": [
+      {
+        "original": "Parte de la vía en la que se prohíbe el tránsito de peatones",
+        "hu": "Az útnak az a része, ahol tilos a gyalogosforgalom"
+      },
+      {
+        "original": "Parte de la vía entre dos poblados por donde pueden circular las bicis",
+        "hu": "Az út két település közötti része, ahol kerékpárok közlekedhetnek"
+      },
+      {
+        "original": "Parte de la vía destinada al tránsito de peatones",
+        "hu": "Az útnak a gyalogosok közlekedésére szolgáló része"
+      },
+      {
+        "original": "Parte de la vía destinada al uso de los vehículos de movilidad personal",
+        "hu": "Az útnak a személyi mobilitási eszközök használatára szolgáló része"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "proformatrans-modulo1-test2-020",
+    "source": "proformatrans-modulo1-test2",
+    "module": "I",
+    "q": "'A mal tiempo, buena cara' sugiere:",
+    "hu": "Az „A mal tiempo, buena cara” („Rossz időben is jó arcot vágni”) azt sugallja:",
+    "answers": [
+      {
+        "original": "Ser positivo ante las dificultades",
+        "hu": "Pozitívan hozzáállni a nehézségekhez"
+      },
+      {
+        "original": "Aceptar las derrotas",
+        "hu": "Elfogadni a vereségeket"
+      },
+      {
+        "original": "Evitar los problemas",
+        "hu": "Elkerülni a problémákat"
+      },
+      {
+        "original": "Reír en todo momento",
+        "hu": "Mindig nevetni"
+      }
+    ],
+    "correctIndex": 0
   }
 ];
