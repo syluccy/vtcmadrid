@@ -37,7 +37,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La polisemia de “banco” permite que signifique:",
-    "hu": "A „banco” szó többjelentésűsége lehetővé teszi, hogy ezt jelentse:",
+    "hu": "A „banco” („pad” vagy „bank”) szó többjelentésűsége lehetővé teszi, hogy ezt jelentse:",
     "answers": [
       {
         "original": "\"Silla o sofá, indistintamente\".",
@@ -63,7 +63,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "El antónimo de “escaso” es:",
-    "hu": "Az „escaso” ellentéte:",
+    "hu": "Az „escaso” („kevés, szűkös”) ellentéte:",
     "answers": [
       {
         "original": "Reducido.",
@@ -89,7 +89,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "El antónimo de “ordenado” es:",
-    "hu": "Az „ordenado” ellentéte:",
+    "hu": "Az „ordenado” („rendezett”) ellentéte:",
     "answers": [
       {
         "original": "Organizado.",
@@ -167,7 +167,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "El antónimo de “suave” es:",
-    "hu": "A „suave” ellentéte:",
+    "hu": "A „suave” („puha, finom”) ellentéte:",
     "answers": [
       {
         "original": "Aterciopelado.",
@@ -193,7 +193,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La palabra “esporádico” en la frase “hubo cortes esporádicos de luz” significa:",
-    "hu": "Az „esporádico” szó a „szórványos áramkimaradások voltak” mondatban ezt jelenti:",
+    "hu": "Az „esporádico” („szórványos”) szó a „szórványos áramkimaradások voltak” mondatban ezt jelenti:",
     "answers": [
       {
         "original": "Prolongado y frecuente.",
@@ -219,7 +219,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La palabra “contumaz” en “infractor contumaz” significa:",
-    "hu": "A „contumaz” szó a „visszaeső jogsértő” kifejezésben ezt jelenti:",
+    "hu": "A „contumaz” („makacs, ismétlődő/visszaeső”) szó a „visszaeső jogsértő” kifejezésben ezt jelenti:",
     "answers": [
       {
         "original": "Reincidente y obstinado.",
@@ -271,7 +271,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "I",
     "q": "La expresión “aforo completo” indica:",
-    "hu": "Az „aforo completo” kifejezés azt jelenti:",
+    "hu": "Az „aforo completo” („megtelt, nincs több férőhely”) kifejezés azt jelenti:",
     "answers": [
       {
         "original": "Capacidad máxima ocupada.",
@@ -739,7 +739,7 @@ export const questionBank = [
     "source": "Első 30-as blokk",
     "module": "II",
     "q": "El denominado \"Campo del Moro\", ¿junto a qué lugar de interés turístico está situado?",
-    "hu": "Az úgynevezett „Campo del Moro” melyik turisztikai látványosság mellett található?",
+    "hu": "Az úgynevezett „Campo del Moro” park melyik turisztikai látványosság mellett található?",
     "answers": [
       {
         "original": "Junto al Parque del Retiro.",
@@ -1701,7 +1701,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "En la expresión “La jornada fue extenuante”, “extenuante” significa:",
-    "hu": "A „La jornada fue extenuante” kifejezésben az „extenuante” jelentése:",
+    "hu": "A „La jornada fue extenuante” („A nap kimerítő volt”) kifejezésben az „extenuante” („kimerítő”) jelentése:",
     "answers": [
       {
         "original": "Muy rápida.",
@@ -1727,7 +1727,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "¿Cuál es el antónimo de “ exabrupto”?",
-    "hu": "Mi az „exabrupto” ellentéte?",
+    "hu": "Mi az „exabrupto” („durva kirohanás, tapintatlan megjegyzés”) ellentéte?",
     "answers": [
       {
         "original": "Grosería.",
@@ -1805,7 +1805,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "En la expresión “La crítica fue acerba”, “acerba” significa:",
-    "hu": "A „La crítica fue acerba” kifejezésben az „acerba” jelentése:",
+    "hu": "A „La crítica fue acerba” („A kritika éles/keserű volt”) kifejezésben az „acerba” („éles, keserű”) jelentése:",
     "answers": [
       {
         "original": "Confusa y tibia.",
@@ -1831,7 +1831,7 @@ export const questionBank = [
     "source": "Harmadik 30-as blokk",
     "module": "I",
     "q": "¿Qué tipo de palabra es autosuficiente?",
-    "hu": "Milyen típusú szó az „autosuficiente”?",
+    "hu": "Milyen típusú szó az „autosuficiente” („önellátó, önmagában elegendő”)?",
     "answers": [
       {
         "original": "Simple.",
@@ -3235,7 +3235,7 @@ export const questionBank = [
     "source": "Ötödik 30-as blokk",
     "module": "I",
     "q": "Elija la respuesta correcta, entre las siguientes, respecto a esta afirmación: “Estar como una regadera.”",
-    "hu": "Válassza ki a helyes választ az alábbiak közül ehhez a kifejezéshez: „Estar como una regadera.”",
+    "hu": "Válassza ki a helyes választ az alábbiak közül ehhez a kifejezéshez: „Estar como una regadera” („nem teljesen normálisnak lenni / bolondosan viselkedni”).",
     "answers": [
       {
         "original": "Estar loco o actuar de manera excéntrica.",
@@ -3339,7 +3339,7 @@ export const questionBank = [
     "source": "Ötödik 30-as blokk",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a \"chasis\"?",
-    "hu": "Az alábbi meghatározások közül melyik felel meg a „chasis” szónak?",
+    "hu": "Az alábbi meghatározások közül melyik felel meg a „chasis” („alváz”) szónak?",
     "answers": [
       {
         "original": "Estructura principal de un vehículo que soporta todos los componentes.",
@@ -3365,7 +3365,7 @@ export const questionBank = [
     "source": "Ötödik 30-as blokk",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a \"ajedrez\"?",
-    "hu": "Az alábbi meghatározások közül melyik felel meg az „ajedrez” szónak?",
+    "hu": "Az alábbi meghatározások közül melyik felel meg az „ajedrez” („sakk”) szónak?",
     "answers": [
       {
         "original": "Juego de mesa en el que dos jugadores mueven piezas en un tablero de 64 casillas.",
@@ -4795,7 +4795,7 @@ export const questionBank = [
     "source": "ejemplo-prueba-iv.pdf",
     "module": "I",
     "q": "La palabra “laconismo” alude a:",
-    "hu": "Mit jelent a „laconismo”?",
+    "hu": "Mit jelent a „laconismo” („szűkszavúság, tömör kifejezésmód”)?",
     "answers": [
       {
         "original": "Hablar con ambiguedad.",
@@ -4873,7 +4873,7 @@ export const questionBank = [
     "source": "Hetedik 30-as blokk",
     "module": "I",
     "q": "Seleccione el antónimo más adecuado de “preterir” :",
-    "hu": "Válaszd ki a „preterir” legmegfelelőbb ellentétét:",
+    "hu": "Válaszd ki a „preterir” („mellőzni, kihagyni”) legmegfelelőbb ellentétét:",
     "answers": [
       {
         "original": "Descartar",
@@ -5237,7 +5237,7 @@ export const questionBank = [
     "source": "Hetedik 30-as blokk",
     "module": "II",
     "q": "¿Qué famoso museo de arte, y dónde está situado, alberga obras maestras como \"Las Meninas\" de Velázquez y \"La maja desnuda\" de Goya?",
-    "hu": "Melyik híres művészeti múzeum, és hol található, ahol Velázquez „Las Meninas” és Goya „La maja desnuda” című remekművei is megtalálhatók?",
+    "hu": "Melyik híres művészeti múzeum, és hol található, ahol Velázquez „Las Meninas” („Az udvarhölgyek”) és Goya „La maja desnuda” („A meztelen maja”) című remekművei is megtalálhatók?",
     "answers": [
       {
         "original": "Museo Reina Sofía, en la calle de Santa Isabel, distrito Centro.",
@@ -6069,7 +6069,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a la palabra “caja”?",
-    "hu": "A következő meghatározások közül melyik felel meg a „caja” szónak?",
+    "hu": "A következő meghatározások közül melyik felel meg a „caja” („doboz, láda vagy pénztár”) szónak?",
     "answers": [
       {
         "original": "Musgo que se cría en la corteza de algunos árboles.",
@@ -6095,7 +6095,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Cuál de las siguientes definiciones corresponde a la palabra “cocina”?",
-    "hu": "A következő meghatározások közül melyik felel meg a \"cocina\" szónak?",
+    "hu": "A következő meghatározások közül melyik felel meg a „cocina” („konyha”) szónak?",
     "answers": [
       {
         "original": "Acción de comer a una hora determinada del día.",
@@ -6121,7 +6121,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Qué significa el refrán “El que mucho abarca, poco aprieta”?",
-    "hu": "Mit jelent a „El que mucho abarca, poco aprieta” közmondás?",
+    "hu": "Mit jelent az „El que mucho abarca, poco aprieta” („Aki túl sokat markol, keveset fog”) közmondás?",
     "answers": [
       {
         "original": "Que es bueno hacer mucho deporte.",
@@ -6303,7 +6303,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "Lo contrario de abrir es",
-    "hu": "Az 'abrir' ellentéte",
+    "hu": "Az „abrir” („kinyitni”) ellentéte",
     "answers": [
       {
         "original": "Elevar.",
@@ -6329,7 +6329,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "Lo contrario de lejos es:",
-    "hu": "A 'lejos' ellentéte:",
+    "hu": "A „lejos” („messze”) ellentéte:",
     "answers": [
       {
         "original": "Alejado.",
@@ -6355,7 +6355,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "Lo contrario de fácil es",
-    "hu": "A 'fácil' ellentéte az",
+    "hu": "A „fácil” („könnyű”) ellentéte az",
     "answers": [
       {
         "original": "Correcto.",
@@ -6407,7 +6407,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Qué palabra significa lo mismo que acabar?",
-    "hu": "Melyik szó jelent ugyanazt, mint az 'acabar'?",
+    "hu": "Melyik szó jelent ugyanazt, mint az „acabar” („befejezni”)?",
     "answers": [
       {
         "original": "Disminuir.",
@@ -6511,7 +6511,7 @@ export const questionBank = [
     "source": "new_questions.txt",
     "module": "I",
     "q": "¿Qué significa el refrán “De tal palo tal astilla”?",
-    "hu": "Mit jelent a „De tal palo tal astilla” közmondás?",
+    "hu": "Mit jelent a „De tal palo tal astilla” („Amilyen a fa, olyan a forgácsa”) közmondás?",
     "answers": [
       {
         "original": "Los familiares no se parecen entre ellos.",
