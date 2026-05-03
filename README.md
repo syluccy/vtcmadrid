@@ -6,3 +6,25 @@ After completing the exam, there is also an option to review either only the inc
 Resources: https://www.comunidad.madrid/servicios/transporte/pruebas-conductor-vtc
 
 The primary language is Castellano (ES), but there are Hungarian aids available. During the exam, the translation of the question can be viewed, and after the exam both the question and the answer are translated into Hungarian.
+
+## Adding new questions
+
+New questions should keep the same structure as `questions.js`: Spanish question text in `q`, Hungarian translation in `hu`, four answer options with `original` and `hu`, a `correctIndex`, a `module` value of `I`, `II`, `III`, or `IV`, and a `source`.
+
+For the Proformatrans test 1 material, add the prepared records to `data/proformatrans-test1.questions.json`. Every imported record is forced to use:
+
+```js
+"source": "proformatrans-test1"
+```
+
+Validate the existing bank:
+
+```bash
+node scripts/validate-questions.mjs
+```
+
+Append the prepared Proformatrans records to `questions.js`:
+
+```bash
+node scripts/append-questions.mjs
+```
